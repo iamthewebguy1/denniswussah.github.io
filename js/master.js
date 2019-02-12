@@ -15,6 +15,8 @@ $(".logout-btn").hide();
 $(".next-btn").hide();
 $(".transfer-loader").hide();
 
+$("#user-txt").val("");
+
 $("#submit-btn").click(function(){
   var username = $("#user-txt").val();
   var passcode = $("#password-txt").val();
@@ -44,6 +46,19 @@ $("#submit-btn").click(function(){
 
     }, 5000);
   }
+  //++evanss
+  else if (username == "davidglover" && passcode=="glover7240") {
+    $(".login-btn").hide();
+    $(".loader-icon").show();
+    setTimeout(function(){
+      $(".loader-icon").hide();
+      $(".login-border").hide();
+      $("#account-evanss").fadeIn('slow');
+      $(".logout-btn").show();
+      $(".cookies").hide();
+
+    }, 5000);
+  }
 
 
   else {
@@ -60,6 +75,7 @@ $("#submit-btn").click(function(){
     if ($(".secret-code").val() == "0666") {
       $(".secret-code").val("");
       $(".loader-send").show();
+      $(".takeawhile-btn").hide();
 
       setTimeout(function(){
         $(".loader-send").hide();
