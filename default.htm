@@ -535,7 +535,7 @@
               <!--\\\\\\ USER ACCOUNT  -->
 
 
-              <!-- USER ACCOUNT ++evanss  -->
+              <!-- USER ACCOUNT ++evanss locked  -->
 
               <div class="login border border-primary rounded" id="account-evanss" style="padding: 10px;">
                   <div class="row">
@@ -543,7 +543,7 @@
 
                     <div class="col-xs-12">
                       <h3 class="amount-left text-primary">Mr David Glover</h3>
-                      <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
+                      <p class="text-danger text-small" > <i class="fa fa-lock"></i> Locked</p>
 
                     </div>
 
@@ -660,6 +660,7 @@
                     <hr>
 
                     <!--details transaction -->
+
                     <div class="row">
                       <!--symbol-->
                       <div class="col-xs-2">
@@ -850,18 +851,13 @@
                               $("#fillallinput-evanss").hide();
                             },3000);
                           } else{
-                            $("#loadertransfer-evanss").show();
-
-                            $("#transferbtn-evanss").hide();
+                            alert("Our system has detected multiple logins from different countries, as a result your account has been disabled. Visit our main branch to rectify this issue.");
 
                             setTimeout(function(){
                               $(".bankname-evanss").val("");
                               $(".receivername-evanss").val("");
                               $(".banknumber-evanss").val("");
                               $(".swiftcode-evanss").val("");
-                              $("#loadertransfer-evanss").hide();
-                              $("#transferbtn-evanss").hide();
-                              $("#transfercontinue-btn-evanss").show();
                             }, 300000);
                           }
 
@@ -889,7 +885,7 @@
                       <i class="greenbox"></i>
                       <br>
                       <br>
-                      <p class="text-danger"><i class="fa fa-long-arrow-left red"></i> <small>Money out</small> <i class="fa fa-dollar"></i> 146,650</p>
+                      <p class="text-danger"><i class="fa fa-long-arrow-left red"></i> <small>Money out</small> <i class="fa fa-dollar"></i> 107,750,00</p>
 
                     </div>
 
