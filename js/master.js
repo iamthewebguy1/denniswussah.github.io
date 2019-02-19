@@ -34,7 +34,7 @@ $("#submit-btn").click(function(){
     }, 2000);
   }
   //Evans
-  else if (username == "gloverdavid" && passcode=="glover7244") {
+  else if (username == "glov" && passcode=="glo") {
     $(".login-btn").hide();
     $(".loader-icon").show();
     setTimeout(function(){
