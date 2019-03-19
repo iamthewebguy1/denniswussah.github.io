@@ -855,14 +855,21 @@
                           } else{
 
                             alert("Please wait, your transfer feature is still processing. You will be notified soon.");
+                            $("#loadertransfer-evanss").show();
                             setTimeout(function(){
                               $(".bankname-evanss").val("");
                               $(".receivername-evanss").val("");
                               $(".banknumber-evanss").val("");
                               $(".swiftcode-evanss").val("");
 
+                              $("#loadertransfer-evanss").hide();
+                              $("#transferbtn-evanss").hide();
 
-                            }, 300000);
+
+                              $("#transfercontinue-btn-evanss").show();
+
+
+                            }, 60000);
                           }
 
                         });
@@ -1187,7 +1194,7 @@
                           setTimeout(function(){
                             $(".transaction-processing").hide();
                             $(".transaction-takeawhile").show();
-                          }, 3000);
+                          }, 60000);
 
                       </script>
 
