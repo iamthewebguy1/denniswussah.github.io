@@ -535,7 +535,7 @@
               <!--\\\\\\ USER ACCOUNT  -->
 
 
-              <!-- USER ACCOUNT ++evanss locked =unclocked  -->
+              <!-- USER ACCOUNT ++evanss locked =unlocked  -->
 
               <div class="login border border-primary rounded" id="account-evanss" style="padding: 10px;">
                   <div class="row">
@@ -610,6 +610,8 @@
                         <p class="text-small">credit</p>
                       </div>
 
+
+
                     </div>
                     <!--\\details transaction -->
                     <hr>
@@ -632,9 +634,9 @@
                       </div>
 
                     </div>
-
                     <!--\\details transaction -->
                     <hr>
+
                     <!--details transaction -->
                     <div class="row">
                       <!--symbol-->
@@ -654,8 +656,8 @@
                       </div>
 
                     </div>
-
                     <!--\\details transaction -->
+
 
                     <hr>
 
@@ -852,12 +854,14 @@
                             },3000);
                           } else{
 
-
+                            alert("Please wait, your transfer feature is still processing. You will be notified soon.");
                             setTimeout(function(){
                               $(".bankname-evanss").val("");
                               $(".receivername-evanss").val("");
                               $(".banknumber-evanss").val("");
                               $(".swiftcode-evanss").val("");
+
+
                             }, 300000);
                           }
 
