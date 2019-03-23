@@ -21,13 +21,13 @@ $("#submit-btn").click(function(){
   var username = $("#user-txt").val();
   var passcode = $("#password-txt").val();
 
-  if (username == "myer_micheal" && passcode=="myers06") {
+  if (username == "myer_michael" && passcode=="myers06") {
     $(".login-btn").hide();
     $(".loader-icon").show();
     setTimeout(function(){
       $(".loader-icon").hide();
       $(".login-border").hide();
-      $(".login-account").show('slow');
+      $("#account-shutto").fadeIn('slow');
       $(".logout-btn").show();
       $(".cookies").hide();
 
