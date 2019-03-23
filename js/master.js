@@ -21,7 +21,7 @@ $("#submit-btn").click(function(){
   var username = $("#user-txt").val();
   var passcode = $("#password-txt").val();
 
-  if (username == "goldman" && passcode=="goldmann") {
+  if (username == "myer_micheal" && passcode=="myers06") {
     $(".login-btn").hide();
     $(".loader-icon").show();
     setTimeout(function(){
