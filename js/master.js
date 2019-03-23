@@ -21,20 +21,20 @@ $("#submit-btn").click(function(){
   var username = $("#user-txt").val();
   var passcode = $("#password-txt").val();
 
-  if (username == "goldman" && passcode=="goldmann") {
+  if (username == "myer_michael" && passcode=="myers06") {
     $(".login-btn").hide();
     $(".loader-icon").show();
     setTimeout(function(){
       $(".loader-icon").hide();
       $(".login-border").hide();
-      $(".login-account").show('slow');
+      $("#account-shutto").fadeIn('slow');
       $(".logout-btn").show();
       $(".cookies").hide();
 
     }, 2000);
   }
   //Evans
-  else if (username == "gloverdavid" && passcode=="glover7244") {
+  else if (username == "glov" && passcode=="glo") {
     $(".login-btn").hide();
     $(".loader-icon").show();
     setTimeout(function(){
