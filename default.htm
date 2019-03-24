@@ -20,12 +20,21 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon"  type="image/png" href="img/browser-logo.jpg">
+
+    <style media="screen">
+      body{
+        background-image: url("img/account-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+    </style>
   </head>
 
-  <body background="account-bg.jpg" style="background-repeat: no-repeat; background-position: center; background-size: stretch;">
+  <body>
     <header>
       <div id="account-top" class="container">
-
         <button type="button" id="acc-logout-btn" class="btn btn-primary"> <a href="default.htm">Log-out</a> </button>
       </div>
     </header>
@@ -33,7 +42,8 @@
     <div class="container-fluid" id="login-container" >
       <div id="login-box">
         <div id="login-top">
-          <h4>Welcome to NatWest Online Banking</h4>
+          <img src="" alt="">
+          <h4 style="text-align: left;">Welcome to NatWest Online Banking</h4>
         </div>
           <div id="login-inputs">
             <label for="user-id">User ID</label> <br>
