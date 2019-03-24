@@ -3,12 +3,15 @@ html a{
 }
 #login-container{
   font-family: arial;
+  letter-spacing: 1px;
   font-weight: lighter;
-  background: rgba(255,255,255,0.5);
+
   margin-top: 100px;
   padding-bottom: 30px;
-  font-size: 150%;
+  font-size: 120%;
+  color: silver;
 }
+
 header{
   text-align: right;
 
@@ -24,10 +27,11 @@ header button{
   margin-top: 20px;
 }
 #login-box{
-  width: 50%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 5px;
+  background: rgba(0,0,0,0.5);
 }
 #loginbtn{
   font-size: 110%;
