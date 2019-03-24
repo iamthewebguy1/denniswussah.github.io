@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/account.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,1563 +18,685 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon"
-      type="image/png"
-      href="img/browser-logo.jpg">
-
-      <style media="screen">
-        .jumbotron p{
-          font-size: 100%!important;
-        }
-      </style>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon"  type="image/png" href="img/browser-logo.jpg">
   </head>
 
-  <body>
+  <body background="account-bg.jpg" style="background-repeat: no-repeat; background-position: center; background-size: stretch;">
+    <header>
+      <div id="account-top" class="container">
 
-    <!-- **************************************************************************************** -->
-    <!-- HEADER SIDE OF BANK THEME -->
-    <!-- ***************************************************************************************** -->
-    <div class="headerr">
-      <!--*******************SIDE NAV *****************************-->
-
-
-      <div id="mySidenav" class="sidenav" style="background: rgba(0,0,0,0.9);">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="product.htm">Products</a>
-        <a href="everydaybanking.htm">Life Moments</a>
-        <a href="waystobank.htm">Ways to Bank</a>
-        <a href="helpandsecurity.htm">Support and security</a>
-        <hr>
-        <a href="contact.htm">Contact</a>
-        <a href="default.htm">Online Banking</a>
+        <button type="button" id="acc-logout-btn" class="btn btn-default"> <a href="default.htm">Log-out</a> </button>
       </div>
+    </header>
 
-      <!-- Use any element to open the sidenav -->
-      <span onclick="openNav()" class="glyphicon glyphicon-menu-hamburger small-screen-menu" style="margin-left: 5%; padding: 5px; font-size: 2.5rem;"></span>
+    <div class="container-fluid" id="login-container" >
+      <div id="login-box">
+        <div id="login-top">
+          <h4>Welcome to NatWest Online Banking</h4>
+        </div>
+          <div id="login-inputs">
+            <label for="user-id">User ID</label> <br>
+            <input type="text" name="user-id" id="username"> <br>
 
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" id="userpassword">
 
-      <!-- **************************************************************************************** -->
-                                    <!-- TOP HEAD -->
-      <!-- ***************************************************************************************** -->
-      <ul class="nav justify-content-center tophead" >
+            <div class="row">
+              <div class="col-xs-6">
+                <p class="alert-danger text-danger">Incorrect Password/Username</p>
+                <button type="button" name="button" class="btn btn-primary login-btn" id="loginbtn">Log in</button>
+                <div class="spinner-border text-primary" id="loader-acc" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </div>
 
-          <li class="nav-item" style="text-align: right!important; width: 100%; margin-right: 10px; ">
-            <a href="#" class="login-btn" ><span class="glyphicon glyphicon-lock"></span> Log in</a>
-            <a href="default.htm" class="logout-btn" ><span class="glyphicon glyphicon-lock"></span> Log out</a>
-          </li>
-        </ul>
+              <div class="col-xs-6" id="right-txt-login">
 
+                <small>
+                  <p>Forgot your security details? <br>Log on help </p>
+                </small>
+              </div>
 
-        <!-- \TOP HEAD ****************************************************************************-->
-
-        <!-- **************************************************************************************** -->
-                                      <!-- SECOND TOP HEAD -->
-        <!-- ***************************************************************************************** -->
-        <ul class="nav  second-tophead">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" style="color: rgb(66, 14, 68)!important; font-weight: bold; font-size: 2rem;">NWB</a>
-          </li>
-          </ul>
-
-          <!-- \ SECOND TOP HEAD ****************************************************************************-->
+            </div>
+          </div>
+      </div>
     </div>
 
-    <!-- \headerr *******************--->
+    <div class="container-fluid account-container" id="account-shutto">
+      <div class="account-box">
+        <h3 class="text-primary">Mr Michael Myers</h3>
+        <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
 
+        <div class="row">
+          <div class="col-xs-6">
+            <h4>Current Account</h4>
+            <p>0277014632760701</p>
+          </div>
+          <div class="col-xs-6">
+            <h4 class="text-success"><i class="fa fa-dollar"></i> 4,001,008. <small class="text-success">00</small>  </h4>
+            <p> <small>Available balance</small> </p>
+          </div>
+        </div>
 
-    <!--******************************************************
-    login body
-    -->
-            <div class="container">
-              <div class="cookies" >
-                <span style="background: rgb(209,209,209); display: block; padding: 10px;">
-                  <span> <i class="glyphicon glyphicon-exclamation-sign" style="color: #42145f;"></i>
+        <div class="row">
+          <div class="col-xs-6">
+            <h4>Card</h4>
+            <p>VISA *1154</p>
+          </div>
+          <div class="col-xs-6">
+            <h4 class="text-success"><i class="fa fa-dollar"></i> 508. <small class="text-success">00</small>  </h4>
+            <p> <small>As at 13:39 on 01/03/19</small> </p>
+          </div>
+        </div>
 
-                   </span>
-                   <span>
-                     We use cookies to help provide you with the best possible online experience. By using this site, you agree that we may store
-                     and access cookies on your device. You can find our more and set your own preferences here.
-                   </span>
-                 </span>
+        <div class="row">
+          <div class="col-xs-6">
+            <h4>Mortgage</h4>
+            <p>Savings</p>
+          </div>
+          <div class="col-xs-6">
+            <h4 class="text-success"><i class="fa fa-dollar"></i> 10,508. <small class="text-success">00</small>  </h4>
+            <p> <small>As at 13:39 on 01/03/19</small> </p>
+          </div>
+        </div>
 
+        <hr>
+        <div class="btn-group btn-group-justified">
+          <a id="transaction-btn-shutto" class="btn btn-primary">Transaction</a>
+          <a id="transfer-btn-shutto" class="btn btn-primary">Transfer</a>
+          <a id="paybills-btn-shutto" class="btn btn-primary">Pay Bills</a>
+          <a id="contact-btn-shutto" class="btn btn-primary">Contact</a>
+        </div>
+        <br>
+
+        <div class="acc-option-box" id="transaction-details">
+          <div id="accordion">
+
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  Year 2019
+                </a>
               </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                   <!-- WARNING: none -->
+                   <p class="text-warning"> ... </p>
+                </div>
+              </div>
+            </div>
 
-              <div class="login-border" id="login-box" style="margin-bottom: 30px;">
-                <br>
-                <h1 style="color: #42145f;">Online Banking Services</h1>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                  Year 2018
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      29/12/18
+                    </div>
+                    <div class="col-xs-3">
+                      Michaels, Consultant
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      201,550.00
+                    </div>
+                  </div>
 
-                <div class="container login-box" style=" border: 1px solid #42145f; margin-top: 100px; padding-bottom: 10px;">
+                  <hr>
 
-                  <br>
-                  <h3 style="width: 99%; background: #42145f; padding: 15px 5px 15px 5px; color: white;">Welcome to Online Banking</h3>
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-right text-success"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      10/12/18
+                    </div>
+                    <div class="col-xs-3">
+                      Joan Jetkins
+                    </div>
+                    <div class="col-xs-3 text-success">
+                      10,000.00
+                    </div>
+                  </div>
 
+                  <hr>
 
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      20/11/18
+                    </div>
+                    <div class="col-xs-3">
+                      Daniel Roosevelt
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      80,000.00
+                    </div>
+                  </div>
 
-                  <p>Choose how you'd like to log in. <br>
-                    You can use your customer number or your card number.
-                   </p>
+                  <hr>
 
-                   <div class="customer-login-one">
-                     <p>
-                       <strong>Customer number:</strong> <br>
-                       This is your date of birth (DDMMYY) followed by your unique identification number.
-                     </p>
-                     <input id="user-txt" type="text" name="" style="padding: 10px 5px; width: 80%;">
-                   </div>
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      25/09/18
+                    </div>
+                    <div class="col-xs-3">
+                      George Roosevelt
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      15,022.00
+                    </div>
+                  </div>
 
-                   <div class="customer-login-one">
-                     <p>
-                       <strong>Customer passcode:</strong> <br>
+                  <hr>
 
-                     </p>
-                     <input id="password-txt" type="password" name="" style="padding: 10px 5px; width: 80%;">
-                   </div>
-                   <br>
-                   <a> <u>Forgotten your customer number?</u> </a>
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      02/07/18
+                    </div>
+                    <div class="col-xs-3">
+                       Conwell J.P, Ltd
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      200,120.00
+                    </div>
+                  </div>
 
-                   <div class="radio">
-                     <label style="font-size: 120%;"><input type="radio" name="optradio" checked> Card number</label>
-                   </div>
+                  <hr>
 
-                   <div class="container" style="text-align: right;">
-                     <input id="submit-btn" type="submit" name="" value="Submit" style="background: #0c7f88; border-color: transparent; width: 90px; color: white">
-                     <br>
-                     <div class="panel-group" id="warning-login">
-                       <div class="panel panel-danger">
-                         <div class="panel-body" style="color: red; text-align: center;">Customer number/Customer passcode doesn't match...</div>
-                       </div>
+                  <div class="row">
+                     <div class="col-xs-3">
+                       <i class="fa fa-arrow-right text-success"></i>
                      </div>
-                     <img src="img/loader.gif" class="loader-icon" style="width: 100px;" alt="">
-
+                     <div class="col-xs-3">
+                       10/05/18
+                     </div>
+                     <div class="col-xs-3">
+                       Burj & Sons, Ltd
+                     </div>
+                     <div class="col-xs-3 text-success">
+                       325,100.00
+                     </div>
                    </div>
-                   <hr>
-                   <p>
-                     Not an online user? <a href="#" style="color: #42145f;"> <u> Sign up here </u></a>
-                   </p>
-                   <hr>
-
-                   <img src="img/nevercall.gif" alt="" style="width: 70%;">
-                   <br>
-                   <small>
-                     Only individuals who have a NW account and authorised access to Online Banking should proceed
-                     beyond this point. For the security of customers, any unauthorised attempt to access customer bank
-                      information will be monitored and may be subject to legal action.
-                   </small>
-                </div>
-
-                <script type="text/javascript">
-                  //Hide All This Stuffs
-                  $("#warning-login").hide();
-                  $(".loader-icon").hide();
-
-                  //////////////////////////////
-
-
-                </script>
-
-
-
-              </div>
-
-
-              <!-- USER ACCOUNT  Max  -->
-
-              <div class="login border border-primary rounded" id="account-evans" style="padding: 10px;">
-                  <div class="row">
-                    <!-- Account Name -->
-
-                    <div class="col-xs-12">
-                      <h3 class="amount-left text-primary">Miss Valentina Brown</h3>
-                      <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
-
-                    </div>
-
-                    <!-- /Account Card -->
-                    <div class="col-xs-7">
-                      <h3>Current account</h3>
-                      <p class="text-muted text-small">007-895-412-3245</p>
-
-                    </div>
-
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-dollar"></i> 3,113,250.<small class="text-success">10</small> </h3>
-                      <p class="text-muted text-small" >Available balance</p>
-
-                    </div>
-
-
-
-                    <!-- Account Card -->
-                    <div class="col-xs-7">
-
-                      <h3>Card</h3>
-                      <p class="acc-number text-small" >VISA 3245</p>
-
-                    </div>
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-dollar"></i> 215.<small class="text-success">90</small> </h3>
-                      <p class="text-muted text-small" style="font-size: 58%;">As at 13:39 on 26/01/18</p>
-
-                    </div>
-
-                    <!-- /Account Card -->
-
-                  </div>
-                <hr>
-                <!--//End of top user account -->
-
-
-                <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#home-evans">Transactions</a></li>
-                  <li><a data-toggle="tab" href="#menu1-evans">Transfer</a></li>
-                  <li><a data-toggle="tab" href="#menu2-evans">Contact</a></li>
-                </ul>
-
-                <div class="tab-content">
-                  <!--TRANSACTION DETAILS SECTION -->
-                  <div id="home-evans" class="tab-pane fade in active">
-                    <!--details transaction -->
-                    <div class="row">
-
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-right green"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">John, Smith</p>
-                        <p class="text-small">31/01/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-success"><i class="fa fa-dollar"></i>228,000.00 </p>
-                        <p class="text-small">credit</p>
-                      </div>
-
-                    </div>
-                    <!--\\details transaction -->
-                    <hr>
-                    <!--details transaction -->
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Mashrook, Gold Company</p>
-                        <p class="text-small">04/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>75,000.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-
-                    <!--\\details transaction -->
-                    <hr>
-                    <!--details transaction -->
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Abdulla Mohammed, Dafallah</p>
-                        <p class="text-small">05/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>7,850.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-
-                    <!--\\details transaction -->
-
-                    <hr>
-                    <!--details transaction -->
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Oceanwave, Delivery Service</p>
-                        <p class="text-small">08/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>31,900.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-
-                    <!--\\details transaction -->
-
-                  </div>
-                  <!-- // TRANSACTION DETAILS  Section-->
-
-                    <!--TRANSER SECTION for evans -->
-                    <div id="menu1-evans" class="tab-pane fade">
-                        <br>
-                        <h5 class="display4">Beneficiary Details</h5>
-                        <p>The SWIFT BIC (Bank Identifier Code) is a unique address that identifies a financial institution.
-                        </p>
-
-                        <div class="form-group">
-                          <label for="usr">Bank name:</label>
-                          <input type="text" class="form-control bankname-evans" id="usr">
-                        </div>
-                        <div class="form-group">
-                          <label for="rname">Receiver name:</label>
-                          <input type="text " class="form-control receivername-evans" id="rname">
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Bank account number:</label>
-                          <input type="text" class="form-control banknumber-evans" id="usr">
-                        </div>
-                        <div class="form-group">
-                          <label for="swiftcode">SWIFT code:</label>
-                          <input type="text" class="form-control swiftcode-evans" id="swiftcode">
-                        </div>
-                        <div class="form-group">
-                          <label for="country">Destination Country</label>
-                          <br>
-                          <Select class="sendsdetial-box">
-                            <option>Algeria</option>
-                           <option>Angola</option>
-                           <option>Argentina</option>
-                           <option>Armenia</option>
-                           <option>Austria</option>
-                           <option>Azerbaijan</option>
-                           <option>Barbados</option>
-                           <option>Belarus</option>
-                           <option>Belgium</option>
-                           <option>Benin</option>
-                           <option>Bolivia</option>
-                           <option>Botswana</option>
-                           <option>Ukraine</option>
-                           <option>Bulgaria</option>
-                           <option>Burkina Faso</option>
-                           <option>Burundi</option>
-                           <option>Cabo Verde</option>
-                           <option>Cambodia</option>
-                           <option>Cameroon</option>
-                           <option>Chad</option>
-                           <option>Chile</option>
-                           <option>China</option>
-                           <option>Colombia</option>
-                           <option>Congo</option>
-                           <option>Cote d'Ivoire</option>
-                           <option>Croatia</option>
-                           <option>Cuba</option>
-                           <option>Cyprus</option>
-                           <option>Czech Republic</option>
-                           <option>Denmark</option>
-                           <option>Egypt</option>
-                           <option>Ethiopia</option>
-                           <option>Finland</option>
-                           <option>France</option>
-                           <option>Gabon</option>
-                           <option>Gambia</option>
-                           <option>Georgia</option>
-                           <option>Germany</option>
-                           <option>Ghana</option>
-                           <option>Greece</option>
-                           <option>Guinea</option>
-                           <option>Hungary</option>
-                           <option>Iceland</option>
-                           <option>India</option>
-                           <option>Iran</option>
-                           <option>Ireland</option>
-                           <option>Israel</option>
-                           <option>Italy</option>
-                           <option>Jamaica</option>
-                           <option>Japan</option>
-                           <option>Kenya</option>
-                           <option>Lebanon</option>
-                           <option>Liberia</option>
-                           <option>Libya</option>
-                           <option>Madasgascar</option>
-                           <option>Malawi</option>
-                           <option>Malaysia</option>
-                           <option>Mali</option>
-                           <option>Mexico</option>
-                           <option>Monaco</option>
-                           <option>Morocco</option>
-                           <option>Mozambique</option>
-                           <option>Netherlands</option>
-                           <option>New Zealand</option>
-                           <option>Nigeria</option>
-                           <option>Norway</option>
-                           <option>Palestine</option>
-                           <option>Peru</option>
-                           <option>Philippines</option>
-                           <option>Poland</option>
-                           <option>Portugal</option>
-                           <option>Qatar</option>
-                           <option>Romania</option>
-                           <option>Russia</option>
-                           <option>Rwanda</option>
-                           <option>Senegal</option>
-                           <option>Sierra Leone</option>
-                           <option>Singapore</option>
-                           <option>Slovakia</option>
-                           <option>Somalia</option>
-                           <option>South Africa</option>
-                           <option>Spain</option>
-                           <option>Sudan</option>
-                           <option>Sweden</option>
-                           <option>Szitzerland</option>
-                           <option>Tanzania</option>
-                           <option>Thailand</option>
-                           <option>Togo</option>
-                           <option>Tunisia</option>
-                           <option>Turkey</option>
-                           <option>Uganda</option>
-                           <option>United Arab Emirates</option>
-                           <option>United States of America</option>
-                           <option>Uraguay</option>
-                           <option>Venezuela</option>
-                           <option>Vietnam</option>
-                           <option>Zambia</option>
-                           <option>Zimbabwe</option>
-                          </select>
-
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Transfer Amount ($):</label>
-                          <input type="number" class="form-control transferamount-evans" id="usr">
-                        </div>
-
-                        <div class="form-group" style="text-align: center;">
-                          <div class="alert alert-danger" id="fillallinput-evans">
-                            <strong>Fill all inputs!</strong>
-                          </div>
-                          <!-- Trigger the modal with a button -->
-                          <center class="transfer-loader" id="loadertransfer-evans"> <img src="img/loader.gif" alt="" style="width:100px;"> </center>
-                          <button class="btn btn-primary" id="transferbtn-evans" type="button" name="button" style="width: 60%; font-size: 100%;">Transfer</button>
-                          <button data-toggle="modal" data-target=".modal" class="btn btn-success next-btn" id="transfercontinue-btn-evans" type="button" name="button" style="width: 60%; font-size: 100%;">Click here to continue</button>
-                        </div>
-
-
-
-                      <!-- \\ TRANSFER SECTION -->
-
-
-
-                    </div>
-                    <script type="text/javascript">
-                        //TRANFER side
-                        $("#transferbtn-evans").click(function(){
-
-
-                          if ($(".bankname-evans").val() == "" || $(".receivername-evans").val() == "" || $(".banknumber-evans").val() == "" || $(".swiftcode-evans").val() == "" || $(".transferamount-evans").val() == "") {
-
-                            $("#fillallinput-evans").show();
-                            setTimeout(function(){
-                              $("#fillallinput-evans").hide();
-                            },3000);
-                          } else{
-                            $("#loadertransfer-evans").show();
-
-                            setTimeout(function(){
-                              $("#loadertransfer-evans").hide();
-                              $("#transferbtn-evans").hide();
-
-
-                            }, 10000);
-                          }
-
-                        });
-
-
-                    </script>
-                    <!-- \\Transfer section for evan-->
-
-                    <!-- CONTACT SECTION -->
-                    <div id="menu2-evans" class="tab-pane fade">
-                      <div class="jumbotron">
-                        <h1 style="color: #42145f;">Reach us on</h1>
-                        <p> <i class="fa fa-envelope" style="color: #42145f;"></i> customerservice@nationalwestingbank.com</p>
-                        <p> <i class="fa fa-envelope" style="color: #42145f;"></i> enquiries@nationalwestingbank.com</p>
-                      </div>
-                    </div>
-                    <!-- \\ CONTACT SECTION-->
-
-
-                  </div>
-
-                  <div class="jumbotron">
-                      <p class="text-success"><i class="fa fa-long-arrow-right green"></i> <small>Money in</small> <i class="fa fa-dollar"></i>  228,000,00</p> <br>
-                      <i class="greenbox"></i>
-                      <br>
-                      <br>
-                      <p class="text-danger"><i class="fa fa-long-arrow-left red"></i> <small>Money out</small> <i class="fa fa-dollar"></i> 114,750</p>
-
-                    </div>
-
-
-
-              </div>
-
-              <!--\\\\\\ USER ACCOUNT  Max -->
-
-              <!-- USER ACCOUNT Stunna -->
-
-              <div class="login border border-primary rounded" id="account-evans" style="padding: 10px;">
-                  <div class="row">
-                    <!-- Account Name -->
-
-                    <div class="col-xs-12">
-                      <h3 class="amount-left text-primary">Miss Valentina Brown</h3>
-                      <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
-
-                    </div>
-
-                    <!-- /Account Card -->
-                    <div class="col-xs-7">
-                      <h3>Current account</h3>
-                      <p class="text-muted text-small">007-895-412-3245</p>
-
-                    </div>
-
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-dollar"></i> 3,113,250.<small class="text-success">10</small> </h3>
-                      <p class="text-muted text-small" >Available balance</p>
-
-                    </div>
-
-
-
-                    <!-- Account Card -->
-                    <div class="col-xs-7">
-
-                      <h3>Card</h3>
-                      <p class="acc-number text-small" >VISA 3245</p>
-
-                    </div>
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-dollar"></i> 215.<small class="text-success">90</small> </h3>
-                      <p class="text-muted text-small" style="font-size: 58%;">As at 13:39 on 26/01/18</p>
-
-                    </div>
-
-                    <!-- /Account Card -->
-
-                  </div>
-                <hr>
-                <!--//End of top user account -->
-
-
-                <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#home-evans">Transactions</a></li>
-                  <li><a data-toggle="tab" href="#menu1-evans">Transfer</a></li>
-                  <li><a data-toggle="tab" href="#menu2-evans">Contact</a></li>
-                </ul>
-
-                <div class="tab-content">
-                  <!--TRANSACTION DETAILS SECTION -->
-                  <div id="home-evans" class="tab-pane fade in active">
-                    <!--details transaction -->
-                    <div class="row">
-
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-right green"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">John, Smith</p>
-                        <p class="text-small">31/01/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-success"><i class="fa fa-dollar"></i>228,000.00 </p>
-                        <p class="text-small">credit</p>
-                      </div>
-
-                    </div>
-                    <!--\\details transaction -->
-                    <hr>
-                    <!--details transaction -->
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Mashrook, Gold Company</p>
-                        <p class="text-small">04/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>75,000.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-
-                    <!--\\details transaction -->
-                    <hr>
-                    <!--details transaction -->
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Abdulla Mohammed, Dafallah</p>
-                        <p class="text-small">05/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>7,850.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-
-                    <!--\\details transaction -->
-
-                    <hr>
-                    <!--details transaction -->
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Oceanwave, Delivery Service</p>
-                        <p class="text-small">08/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>31,900.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-
-                    <!--\\details transaction -->
-
-                  </div>
-                  <!-- // TRANSACTION DETAILS  Section-->
-
-                    <!--TRANSER SECTION for evans -->
-                    <div id="menu1-evans" class="tab-pane fade">
-                        <br>
-                        <h5 class="display4">Beneficiary Details</h5>
-                        <p>The SWIFT BIC (Bank Identifier Code) is a unique address that identifies a financial institution.
-                        </p>
-
-                        <div class="form-group">
-                          <label for="usr">Bank name:</label>
-                          <input type="text" class="form-control bankname-evans" id="usr">
-                        </div>
-                        <div class="form-group">
-                          <label for="rname">Receiver name:</label>
-                          <input type="text " class="form-control receivername-evans" id="rname">
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Bank account number:</label>
-                          <input type="text" class="form-control banknumber-evans" id="usr">
-                        </div>
-                        <div class="form-group">
-                          <label for="swiftcode">SWIFT code:</label>
-                          <input type="text" class="form-control swiftcode-evans" id="swiftcode">
-                        </div>
-                        <div class="form-group">
-                          <label for="country">Destination Country</label>
-                          <br>
-                          <Select class="sendsdetial-box">
-                            <option>Algeria</option>
-                           <option>Angola</option>
-                           <option>Argentina</option>
-                           <option>Armenia</option>
-                           <option>Austria</option>
-                           <option>Azerbaijan</option>
-                           <option>Barbados</option>
-                           <option>Belarus</option>
-                           <option>Belgium</option>
-                           <option>Benin</option>
-                           <option>Bolivia</option>
-                           <option>Botswana</option>
-                           <option>Ukraine</option>
-                           <option>Bulgaria</option>
-                           <option>Burkina Faso</option>
-                           <option>Burundi</option>
-                           <option>Cabo Verde</option>
-                           <option>Cambodia</option>
-                           <option>Cameroon</option>
-                           <option>Chad</option>
-                           <option>Chile</option>
-                           <option>China</option>
-                           <option>Colombia</option>
-                           <option>Congo</option>
-                           <option>Cote d'Ivoire</option>
-                           <option>Croatia</option>
-                           <option>Cuba</option>
-                           <option>Cyprus</option>
-                           <option>Czech Republic</option>
-                           <option>Denmark</option>
-                           <option>Egypt</option>
-                           <option>Ethiopia</option>
-                           <option>Finland</option>
-                           <option>France</option>
-                           <option>Gabon</option>
-                           <option>Gambia</option>
-                           <option>Georgia</option>
-                           <option>Germany</option>
-                           <option>Ghana</option>
-                           <option>Greece</option>
-                           <option>Guinea</option>
-                           <option>Hungary</option>
-                           <option>Iceland</option>
-                           <option>India</option>
-                           <option>Iran</option>
-                           <option>Ireland</option>
-                           <option>Israel</option>
-                           <option>Italy</option>
-                           <option>Jamaica</option>
-                           <option>Japan</option>
-                           <option>Kenya</option>
-                           <option>Lebanon</option>
-                           <option>Liberia</option>
-                           <option>Libya</option>
-                           <option>Madasgascar</option>
-                           <option>Malawi</option>
-                           <option>Malaysia</option>
-                           <option>Mali</option>
-                           <option>Mexico</option>
-                           <option>Monaco</option>
-                           <option>Morocco</option>
-                           <option>Mozambique</option>
-                           <option>Netherlands</option>
-                           <option>New Zealand</option>
-                           <option>Nigeria</option>
-                           <option>Norway</option>
-                           <option>Palestine</option>
-                           <option>Peru</option>
-                           <option>Philippines</option>
-                           <option>Poland</option>
-                           <option>Portugal</option>
-                           <option>Qatar</option>
-                           <option>Romania</option>
-                           <option>Russia</option>
-                           <option>Rwanda</option>
-                           <option>Senegal</option>
-                           <option>Sierra Leone</option>
-                           <option>Singapore</option>
-                           <option>Slovakia</option>
-                           <option>Somalia</option>
-                           <option>South Africa</option>
-                           <option>Spain</option>
-                           <option>Sudan</option>
-                           <option>Sweden</option>
-                           <option>Szitzerland</option>
-                           <option>Tanzania</option>
-                           <option>Thailand</option>
-                           <option>Togo</option>
-                           <option>Tunisia</option>
-                           <option>Turkey</option>
-                           <option>Uganda</option>
-                           <option>United Arab Emirates</option>
-                           <option>United States of America</option>
-                           <option>Uraguay</option>
-                           <option>Venezuela</option>
-                           <option>Vietnam</option>
-                           <option>Zambia</option>
-                           <option>Zimbabwe</option>
-                          </select>
-
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Transfer Amount ($):</label>
-                          <input type="number" class="form-control transferamount-evans" id="usr">
-                        </div>
-
-                        <div class="form-group" style="text-align: center;">
-                          <div class="alert alert-danger" id="fillallinput-evans">
-                            <strong>Fill all inputs!</strong>
-                          </div>
-                          <!-- Trigger the modal with a button -->
-                          <center class="transfer-loader" id="loadertransfer-evans"> <img src="img/loader.gif" alt="" style="width:100px;"> </center>
-                          <button class="btn btn-primary" id="transferbtn-evans" type="button" name="button" style="width: 60%; font-size: 100%;">Transfer</button>
-                          <button data-toggle="modal" data-target=".modal" class="btn btn-success next-btn" id="transfercontinue-btn-evans" type="button" name="button" style="width: 60%; font-size: 100%;">Click here to continue</button>
-                        </div>
-
-
-
-                      <!-- \\ TRANSFER SECTION -->
-
-
-
-                    </div>
-                    <script type="text/javascript">
-                        //TRANFER side
-                        $("#transferbtn-evans").click(function(){
-
-
-                          if ($(".bankname-evans").val() == "" || $(".receivername-evans").val() == "" || $(".banknumber-evans").val() == "" || $(".swiftcode-evans").val() == "" || $(".transferamount-evans").val() == "") {
-
-                            $("#fillallinput-evans").show();
-                            setTimeout(function(){
-                              $("#fillallinput-evans").hide();
-                            },3000);
-                          } else{
-                            $("#loadertransfer-evans").show();
-
-                            setTimeout(function(){
-                              $("#loadertransfer-evans").hide();
-                              $("#transferbtn-evans").hide();
-
-
-                            }, 10000);
-                          }
-
-                        });
-
-
-                    </script>
-                    <!-- \\Transfer section for evan-->
-
-                    <!-- CONTACT SECTION -->
-                    <div id="menu2-evans" class="tab-pane fade">
-                      <div class="jumbotron">
-                        <h1 style="color: #42145f;">Reach us on</h1>
-                        <p> <i class="fa fa-envelope" style="color: #42145f;"></i> customerservice@nationalwestingbank.com</p>
-                        <p> <i class="fa fa-envelope" style="color: #42145f;"></i> enquiries@nationalwestingbank.com</p>
-                      </div>
-                    </div>
-                    <!-- \\ CONTACT SECTION-->
-
-
-                  </div>
-
-                  <div class="jumbotron">
-                      <p class="text-success"><i class="fa fa-long-arrow-right green"></i> <small>Money in</small> <i class="fa fa-dollar"></i>  228,000,00</p> <br>
-                      <i class="greenbox"></i>
-                      <br>
-                      <br>
-                      <p class="text-danger"><i class="fa fa-long-arrow-left red"></i> <small>Money out</small> <i class="fa fa-dollar"></i> 114,750</p>
-
-                    </div>
-
-
-
-              </div>
-
-              <!--\\\\\\ USER ACCOUNT Stunna -->
-
-
-              <!-- USER ACCOUNT ++evanss locked =unlocked  -->
-
-              <div class="login border border-primary rounded" id="account-evanss" style="padding: 10px;">
-                  <div class="row">
-                    <!-- Account Name -->
-
-                    <div class="col-xs-12">
-                      <h3 class="amount-left text-primary">Mr David Glover</h3>
-                      <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
-
-                    </div>
-
-                    <!-- /Account Card -->
-                    <div class="col-xs-7">
-                      <h3>Current account</h3>
-                      <p class="text-muted text-small">007-895-412-3245</p>
-
-                    </div>
-
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-dollar"></i> 120,250.<small class="text-success">10</small> </h3>
-                      <p class="text-muted text-small" >Available balance</p>
-
-                    </div>
-
-
-
-                    <!-- Account Card -->
-                    <div class="col-xs-7">
-
-                      <h3>Card</h3>
-                      <p class="acc-number text-small" >VISA 3245</p>
-
-                    </div>
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-dollar"></i> 215.<small class="text-success">20</small> </h3>
-                      <p class="text-muted text-small" style="font-size: 58%;">As at 13:39 on 26/01/18</p>
-
-                    </div>
-
-                    <!-- /Account Card -->
-
-                  </div>
-                <hr>
-                <!--//End of top user account -->
-
-
-                <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#home-evanss">Transactions</a></li>
-                  <li><a data-toggle="tab" href="#menu1-evanss">Transfer</a></li>
-                  <li><a data-toggle="tab" href="#menu2-evanss">Contact</a></li>
-                </ul>
-
-                <div class="tab-content">
-                  <!--TRANSACTION DETAILS SECTION -->
-                  <div id="home-evanss" class="tab-pane fade in active">
-                    <!--details transaction -->
-                    <div class="row">
-
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-right green"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Thomas, Clark</p>
-                        <p class="text-small">31/01/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-success"><i class="fa fa-dollar"></i>228,000.00 </p>
-                        <p class="text-small">credit</p>
-                      </div>
-
-
-
-                    </div>
-                    <!--\\details transaction -->
-                    <hr>
-                    <!--details transaction -->
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Mashrook, Gold Company</p>
-                        <p class="text-small">04/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>68,000.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-                    <!--\\details transaction -->
-                    <hr>
-
-                    <!--details transaction -->
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Abdulla Mohammed, Dafallah</p>
-                        <p class="text-small">05/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>7,850.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-                    <!--\\details transaction -->
-
-
-                    <hr>
-
-                    <!--details transaction -->
-
-                    <div class="row">
-                      <!--symbol-->
-                      <div class="col-xs-2">
-                        <br>
-                        <i class="fa fa-long-arrow-left red"></i>
-                      </div>
-                      <!--Name transaction-->
-                      <div class="col-xs-6">
-                        <p class="text-info">Oceanwave, Delivery Service</p>
-                        <p class="text-small">13/02/2019</p>
-                      </div>
-                      <!--Amount-->
-                      <div class="col-xs-4">
-                        <p class="text-danger">-<i class="fa fa-dollar"></i>31,900.00 </p>
-                        <p class="text-small">payment</p>
-                      </div>
-
-                    </div>
-
-                    <!--\\details transaction -->
-
-                    <hr>
-
-                  </div>
-                  <!-- // TRANSACTION DETAILS  Section-->
-
-                    <!--TRANSER SECTION for evanss -->
-                    <div id="menu1-evanss" class="tab-pane fade">
-                        <br>
-                        <h5 class="display4">Beneficiary Details</h5>
-                        <p>The SWIFT BIC (Bank Identifier Code) is a unique address that identifies a financial institution.
-                        </p>
-
-                        <div class="form-group">
-                          <label for="usr">Bank name:</label>
-                          <input type="text" class="form-control bankname-evanss" id="usr">
-                        </div>
-                        <div class="form-group">
-                          <label for="rname">Receiver name:</label>
-                          <input type="text " class="form-control receivername-evanss" id="rname">
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Bank account number:</label>
-                          <input type="text" class="form-control banknumber-evanss" id="usr">
-                        </div>
-                        <div class="form-group">
-                          <label for="swiftcode">SWIFT code:</label>
-                          <input type="text" class="form-control swiftcode-evanss" id="swiftcode">
-                        </div>
-                        <div class="form-group">
-                          <label for="country">Destination Country</label>
-                          <br>
-                          <Select class="sendsdetial-box">
-                            <option>Select a country</option>
-                            <option>Algeria</option>
-                           <option>Angola</option>
-                           <option>Argentina</option>
-                           <option>Armenia</option>
-                           <option>Austria</option>
-                           <option>Azerbaijan</option>
-                           <option>Barbados</option>
-                           <option>Belarus</option>
-                           <option>Belgium</option>
-                           <option>Benin</option>
-                           <option>Bolivia</option>
-                           <option>Botswana</option>
-                           <option>Ukraine</option>
-                           <option>Bulgaria</option>
-                           <option>Burkina Faso</option>
-                           <option>Burundi</option>
-                           <option>Cabo Verde</option>
-                           <option>Cambodia</option>
-                           <option>Cameroon</option>
-                           <option>Chad</option>
-                           <option>Chile</option>
-                           <option>China</option>
-                           <option>Colombia</option>
-                           <option>Congo</option>
-                           <option>Cote d'Ivoire</option>
-                           <option>Croatia</option>
-                           <option>Cuba</option>
-                           <option>Cyprus</option>
-                           <option>Czech Republic</option>
-                           <option>Denmark</option>
-                           <option>Egypt</option>
-                           <option>Ethiopia</option>
-                           <option>Finland</option>
-                           <option>France</option>
-                           <option>Gabon</option>
-                           <option>Gambia</option>
-                           <option>Georgia</option>
-                           <option>Germany</option>
-                           <option>Ghana</option>
-                           <option>Greece</option>
-                           <option>Guinea</option>
-                           <option>Hungary</option>
-                           <option>Iceland</option>
-                           <option>India</option>
-                           <option>Iran</option>
-                           <option>Ireland</option>
-                           <option>Israel</option>
-                           <option>Italy</option>
-                           <option>Jamaica</option>
-                           <option>Japan</option>
-                           <option>Kenya</option>
-                           <option>Lebanon</option>
-                           <option>Liberia</option>
-                           <option>Libya</option>
-                           <option>Madasgascar</option>
-                           <option>Malawi</option>
-                           <option>Malaysia</option>
-                           <option>Mali</option>
-                           <option>Mexico</option>
-                           <option>Monaco</option>
-                           <option>Morocco</option>
-                           <option>Mozambique</option>
-                           <option>Netherlands</option>
-                           <option>New Zealand</option>
-                           <option>Nigeria</option>
-                           <option>Norway</option>
-                           <option>Palestine</option>
-                           <option>Peru</option>
-                           <option>Philippines</option>
-                           <option>Poland</option>
-                           <option>Portugal</option>
-                           <option>Qatar</option>
-                           <option>Romania</option>
-                           <option>Russia</option>
-                           <option>Rwanda</option>
-                           <option>Senegal</option>
-                           <option>Sierra Leone</option>
-                           <option>Singapore</option>
-                           <option>Slovakia</option>
-                           <option>Somalia</option>
-                           <option>South Africa</option>
-                           <option>Spain</option>
-                           <option>Sudan</option>
-                           <option>Sweden</option>
-                           <option>Szitzerland</option>
-                           <option>Tanzania</option>
-                           <option>Thailand</option>
-                           <option>Togo</option>
-                           <option>Tunisia</option>
-                           <option>Turkey</option>
-                           <option>Uganda</option>
-                           <option>United Arab Emirates</option>
-                           <option>United States of America</option>
-                           <option>Uraguay</option>
-                           <option>Venezuela</option>
-                           <option>Vietnam</option>
-                           <option>Zambia</option>
-                           <option>Zimbabwe</option>
-                          </select>
-
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Transfer Amount ($):</label>
-                          <input type="number" class="form-control transferamount-evanss" id="usr">
-                        </div>
-
-                        <div class="form-group" style="text-align: center;">
-                          <div class="alert alert-danger" id="fillallinput-evanss">
-                            <strong>Fill all inputs!</strong>
-                          </div>
-                          <!-- Trigger the modal with a button -->
-                          <center class="transfer-loader" id="loadertransfer-evanss"> <img src="img/loader.gif" alt="" style="width:100px;"> </center>
-                          <button class="btn btn-primary" id="transferbtn-evanss" type="button" name="button" style="width: 60%; font-size: 100%;">Transfer</button>
-                          <button data-toggle="modal" data-target=".modal" class="btn btn-success next-btn" id="transfercontinue-btn-evanss" type="button" name="button" style="width: 60%; font-size: 100%;">Click here to continue</button>
-                        </div>
-
-
-
-                      <!-- \\ TRANSFER SECTION -->
-
-
-
-                    </div>
-                    <script type="text/javascript">
-
-                        //TRANFER side
-                        $("#transferbtn-evanss").click(function(){
-
-
-                          if ($(".bankname-evanss").val() == "" || $(".receivername-evanss").val() == "" || $(".banknumber-evanss").val() == "" || $(".swiftcode-evanss").val() == "" || $(".transferamount-evanss").val() == "") {
-
-                            $("#fillallinput-evanss").show();
-                            setTimeout(function(){
-                              $("#fillallinput-evanss").hide();
-                            },3000);
-                          } else{
-
-                            alert("Please wait, your transfer feature is still processing. You will be notified soon.");
-                            setTimeout(function(){
-                              $(".bankname-evanss").val("");
-                              $(".receivername-evanss").val("");
-                              $(".banknumber-evanss").val("");
-                              $(".swiftcode-evanss").val("");
-
-
-                            }, 300000);
-                          }
-
-                        });
-
-
-                    </script>
-                    <!-- \\Transfer section for evan-->
-
-                    <!-- CONTACT SECTION -->
-                    <div id="menu2-evanss" class="tab-pane fade">
-                      <div class="jumbotron">
-                        <h1 style="color: #42145f;">Reach us on</h1>
-                        <p> <i class="fa fa-envelope" style="color: #42145f;"></i> customerservice@nationalwestingbank.com</p>
-                        <p> <i class="fa fa-envelope" style="color: #42145f;"></i> enquiries@nationalwestingbank.com</p>
-                      </div>
-                    </div>
-                    <!-- \\ CONTACT SECTION-->
-
-
-                  </div>
-
-                  <div class="jumbotron">
-                      <p class="text-success"><i class="fa fa-long-arrow-right green"></i> <small>Money in</small> <i class="fa fa-dollar"></i>  228,000,00</p> <br>
-                      <i class="greenbox"></i>
-                      <br>
-                      <br>
-                      <p class="text-danger"><i class="fa fa-long-arrow-left red"></i> <small>Money out</small> <i class="fa fa-dollar"></i> 107,750,00</p>
-
-                    </div>
-
-
-
-              </div>
-
-              <!--\\\\\\ USER ACCOUNT ++evanss -->
-
-
-
-              <!-- USER ACCOUNT evans-->
-
-              <div class="login-account border border-primary rounded" id="account-shutto" style="padding: 10px;">
-                  <div class="row">
-                    <!-- Account Name -->
-
-                    <div class="col-xs-12">
-                      <h3 class="amount-left text-primary">Mr Michael Myers  </h3>
-                      <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
-
-                    </div>
-
-                    <!-- /Account Card -->
-                    <div class="col-xs-7">
-                      <h3>Current account</h3>
-                      <p class="text-muted text-small">20-33-55 12345678</p>
-
-                    </div>
-
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-euro"></i> 4,001,008.<small class="text-success">00</small> </h3>
-                      <p class="text-muted text-small" >Available balance</p>
-
-                    </div>
-
-
-
-                    <!-- Account Card -->
-                    <div class="col-xs-7">
-
-                      <h3>Card</h3>
-                      <p class="acc-number text-small" >VISA 1154</p>
-
-                    </div>
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-euro"></i> 515.<small class="text-success">90</small> </h3>
-                      <p class="text-muted text-small" style="font-size: 58%;">As at 13:39 on 26/01/18</p>
-
-                    </div>
-
-                    <!-- /Account Card -->
-
-                    <!--Mortgage Saving -->
-                    <div class="col-xs-7">
-                      <h3>Mortgage</h3>
-                      <p class="acc-number text-small" >Savings</p>
-
-                    </div>
-                    <div class="col-xs-5">
-                      <h3 class="amount-left text-success"><i class="fa fa-euro"></i> 20,215.<small class="text-success">90</small> </h3>
-                      <p class="text-muted text-small" style="font-size: 58%;">As at 13:39 on 26/01/18</p>
-
-                    </div>
-                    <!--\\Mortgage Saving -->
-
-
-
-
-                  </div>
-                <hr>
-                <!--//End of top user account -->
-
-
-                <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#home" area-expaneded="true">Transactions</a></li>
-                  <li><a data-toggle="tab" href="#menu1">Transfer</a></li>
-                  <li><a data-toggle="tab" href="#menu2">Contact</a></li>
-                </ul>
-
-                <div class="tab-content">
-                  <!--TRANSACTION DETAILS SECTION -->
-                  <div id="home" class="tab-pane fade in active">
-                    <!--details transaction -->
-                      <div class="row">
-                        <!--symbol-->
-                        <div class="col-xs-2">
-                          <br>
-                          <i class="fa fa-long-arrow-left red"></i>
-                        </div>
-                        <!--Name transaction-->
-                        <div class="col-xs-6">
-                          <p class="text-info">Tesco, Islington</p>
-                          <p class="text-small">11/04/2017</p>
-                        </div>
-                        <!--Amount-->
-                        <div class="col-xs-4">
-                          <p class="text-danger">-<i class="fa fa-euro"></i>132.21 </p>
-                          <p class="text-small">payment</p>
-                        </div>
-
-                      </div>
-                    <!--\\details transaction -->
-                    <hr>
-                    <!--details transaction -->
-                      <div class="row">
-                        <!--symbol-->
-                        <div class="col-xs-2">
-                          <br>
-                          <i class="fa fa-long-arrow-right green"></i>
-                        </div>
-                        <!--Name transaction-->
-                        <div class="col-xs-6">
-                          <p class="text-info">John, Smith</p>
-                          <p class="text-small">12/04/2016</p>
-                        </div>
-                        <!--Amount-->
-                        <div class="col-xs-4">
-                          <p class="text-success"><i class="fa fa-euro"></i>1,500.00 </p>
-                          <p class="text-small">credit</p>
-                        </div>
-
-                      </div>
-                    <!--\\details transaction -->
-                    <hr>
-                    <!--details transaction -->
-                      <div class="row">
-                        <!--symbol-->
-                        <div class="col-xs-2">
-                          <br>
-                          <i class="fa fa-long-arrow-right green"></i>
-                        </div>
-                        <!--Name transaction-->
-                        <div class="col-xs-6">
-                          <p class="text-info">John, Smith</p>
-                          <p class="text-small">12//2016</p>
-                        </div>
-                        <!--Amount-->
-                        <div class="col-xs-4">
-                          <p class="text-success"><i class="fa fa-euro"></i>500.00 </p>
-                          <p class="text-small">credit</p>
-                        </div>
-
-                      </div>
-                    <!--\\details transaction -->
-                  </div>
-                  <!-- // TRANSACTION DETAILS -->
-
-                    <!--TRANSER SECTION -->
-                    <div id="menu1" class="tab-pane fade">
-                        <br>
-                        <h5 class="display4">Beneficiary Details</h5>
-                        <p>The SWIFT BIC (Bank Identifier Code) is a unique address that identifies a financial institution.
-                        </p>
-
-                        <div class="form-group">
-                          <label for="usr">Bank name:</label>
-                          <input type="text" class="form-control bankname" id="usr">
-                        </div>
-                        <div class="form-group">
-                          <label for="rname">Receiver name:</label>
-                          <input type="text " class="form-control receivername" id="rname">
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Bank account number:</label>
-                          <input type="text" class="form-control banknumber" id="usr">
-                        </div>
-                        <div class="form-group">
-                          <label for="swiftcode">SWIFT code:</label>
-                          <input type="text" class="form-control swiftcode" id="swiftcode">
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">Transfer Amount:</label>
-                          <input type="number" class="form-control transferamount" id="usr">
-                        </div>
-
-                        <div class="form-group" style="text-align: center;">
-                          <div class="alert alert-danger">
-                            <strong>Fill all inputs!</strong>
-                          </div>
-                          <button class="transfer-btn btn btn-primary" type="button" name="button" style="width: 60%; font-size: 100%;" id="transfer-btn-evans">Transfer</button>
-                          <button data-toggle="modal" data-target=".modal" class="btn btn-success next-btn" type="button" name="button" style="width: 60%; font-size: 100%;">Click here to continue</button>
-                        </div>
-
-                        <script type="text/javascript">
-                            //TRANFER side
-                            $(".transfer-btn").click(function(){
-                              var bankname= $(".bankname").val();
-                              var receivername= $(".receivername").val();
-                              var swiftcode = $(".swiftcode").val();
-                              var banknumber = $(".banknumber").val();
-                              var transferamount = $(".transferamount").val();
-
-                              if (bankname == "" || receivername=="" || swiftcode == "" || banknumber == "" || transferamount == "") {
-                                $(".alert-danger").show();
-                                setTimeout(function(){
-                                  $(".alert-danger").hide();
-                                },6000);
-                              } else {
-                                $(".transfer-loader").show();
-                                $(".bankname").val("");
-                                $(".receivername").val("");
-                                $(".banknumber").val("");
-
-                                setTimeout(function(){
-                                $(".transfer-loader").hide();
-                                $("#transfer-btn-evans").hide();
-                                $(".next-btn").show();
-                              }, 2000);
-                              }
-                            });
-
-
-                        </script>
-                      <!-- \\ TRANSFER SECTION -->
-
-
-
-                    </div>
-
-                    <!-- CONTACT SECTION -->
-                    <div id="menu2" class="tab-pane fade">
-                      <div class="jumbotron">
-                        <h1 style="color: #42145f;">Reach us on</h1>
-                        <p> <i class="fa fa-envelope" style="color: #42145f;"></i> customerservice@nationalwestingbank.com</p>
-                        <p> <i class="fa fa-envelope" style="color: #42145f;"></i> enquiries@nationalwestingbank.com</p>
-                      </div>
-                    </div>
-                    <!-- \\ CONTACT SECTION-->
-
-
-
-
-                  </div>
-
-                <div class="jumbotron">
-                    <p class="text-success"><i class="fa fa-long-arrow-right green"></i> <small>Money in</small>  25,251,58</p> <br>
-                    <i class="greenbox"></i>
-                    <br>
-                    <br>
-                    <p class="text-danger"><i class="fa fa-long-arrow-left red"></i> <small>Money out</small>  2,151,58</p>
-
-                  </div>
-
-
-
-              </div>
-
-              <!-- \\\\USER ACCOUNT evans -->
-
-
-
-              <!-- Modal -->
-              <div id="myModal" class="modal fade allmodal" role="dialog">
-                <div class="modal-dialog">
-
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-
-
-                    </div>
-                    <div class="modal-body">
-                      <div class="transaction-processing" style="text-align: center">
-                        <h3>Please wait, your transaction is processing...</h3>
-                        <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
-                      		 <circle cx="170" cy="170" r="160" stroke="#E2007C"/>
-                      		 <circle cx="170" cy="170" r="135" stroke="#404041"/>
-                      		 <circle cx="170" cy="170" r="110" stroke="#E2007C"/>
-                      		 <circle cx="170" cy="170" r="85" stroke="#404041"/>
-                      	</svg>
-                      </div>
-
-                      <div class="transaction-takeawhile" style="text-align: center;">
-                        <p class="hide-txt">Provide us with your secret wire code:</p>
-                        <input type="number" name="" class="secret-code">
-                        <button class="btn btn-success takeawhile-btn" type="button" name="button"> Send</button>
-
-                        <hr>
-                        <br>
-                        <small class="loader-send">Transaction might take awhile to complete... </small>
-                        <br>
-                        <img class="loader-send" src="img/loader-modal.gif" alt="" style="width: 30%;">
-
-                      </div>
-
-                      <div class="transaction-leave" style="text-align: center;">
-
-                        <button class="btn btn-success" type="button" name="button"><a href="default.htm" style="color: snow;"> Continue </a> </button>
-                      </div>
-
-                      <script type="text/javascript">
-                          $(".loader-send").hide();
-                          $(".transaction-leave").hide();
-                          setTimeout(function(){
-                            $(".transaction-processing").hide();
-                            $(".transaction-takeawhile").show();
-                          }, 3000);
-
-                      </script>
-
-
-                    </div>
-                    <div class="modal-footer">
-
-                    </div>
-                  </div>
 
                 </div>
               </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                  Year 2017
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      29/12/15
+                    </div>
+                    <div class="col-xs-3">
+                      J&J Institution
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      501,550.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-right text-success"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      10/12/17
+                    </div>
+                    <div class="col-xs-3">
+                      Paul Jetkins
+                    </div>
+                    <div class="col-xs-3 text-success">
+                      110,500.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      20/11/17
+                    </div>
+                    <div class="col-xs-3">
+                      George Roosevelt
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      17,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      25/09/17
+                    </div>
+                    <div class="col-xs-3">
+                      Dequin ,Ltd
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      5,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      02/07/17
+                    </div>
+                    <div class="col-xs-3">
+                      Kennedy Smith, Ltd
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      55,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                     <div class="col-xs-3">
+                       <i class="fa fa-arrow-right text-success"></i>
+                     </div>
+                     <div class="col-xs-3">
+                       10/05/17
+                     </div>
+                     <div class="col-xs-3">
+                       Larry Carter
+                     </div>
+                     <div class="col-xs-3 text-success">
+                       13,100.00
+                     </div>
+                   </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                  Year 2016
+                </a>
+              </div>
+              <div id="collapseFour" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      29/12/16
+                    </div>
+                    <div class="col-xs-3">
+                      J&J Institution
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      12,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-right text-success"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      10/12/16
+                    </div>
+                    <div class="col-xs-3">
+                      Lons Jyne
+                    </div>
+                    <div class="col-xs-3 text-success">
+                      22,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      20/11/16
+                    </div>
+                    <div class="col-xs-3">
+                      George Roosevelt
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      5,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      25/09/16
+                    </div>
+                    <div class="col-xs-3">
+                      Burj & Sons, Ltd
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      55,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      02/07/16
+                    </div>
+                    <div class="col-xs-3">
+                      James, Blackson
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      55,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                     <div class="col-xs-3">
+                       <i class="fa fa-arrow-right text-success"></i>
+                     </div>
+                     <div class="col-xs-3">
+                       10/05/16
+                     </div>
+                     <div class="col-xs-3">
+                       Lily Trey, Pot
+                     </div>
+                     <div class="col-xs-3 text-success">
+                       500.00
+                     </div>
+                   </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="acc-option-box" id="transfer-details">
+          <h4>Beneficiary Details</h4>
+          <p>
+            <small>
+              The SWIFT BIC (Bank identifier Code) is a unique address that identifies a financial institution.
+            </small>
+          </p>
+          <hr>
+
+          <label>Bank name: </label> <br>
+          <input type="text" id="bankname-txt-shutto">
+          <br>
+
+          <br>
+          <label>Receiver name: </label> <br>
+          <input type="text" id="receivername-txt-shutto">
+          <br>
+
+          <br>
+          <label>Bank account number: </label> <br>
+          <input type="text" id="accountnumber-txt-shutto">
+          <br>
+
+          <br>
+          <label>SWIFT code: </label> <br>
+          <input type="text" id="swift-txt-shutto">
+          <br>
+
+          <br>
+
+
+            <label for="country">Destination Country</label>
+            <br>
+            <Select class="sendsdetial-box">
+              <option>Algeria</option>
+             <option>Angola</option>
+             <option>Argentina</option>
+             <option>Armenia</option>
+             <option>Austria</option>
+             <option>Azerbaijan</option>
+             <option>Barbados</option>
+             <option>Belarus</option>
+             <option>Belgium</option>
+             <option>Benin</option>
+             <option>Bolivia</option>
+             <option>Botswana</option>
+             <option>Ukraine</option>
+             <option>Bulgaria</option>
+             <option>Burkina Faso</option>
+             <option>Burundi</option>
+             <option>Cabo Verde</option>
+             <option>Cambodia</option>
+             <option>Cameroon</option>
+             <option>Chad</option>
+             <option>Chile</option>
+             <option>China</option>
+             <option>Colombia</option>
+             <option>Congo</option>
+             <option>Cote d'Ivoire</option>
+             <option>Croatia</option>
+             <option>Cuba</option>
+             <option>Cyprus</option>
+             <option>Czech Republic</option>
+             <option>Denmark</option>
+             <option>Egypt</option>
+             <option>Ethiopia</option>
+             <option>Finland</option>
+             <option>France</option>
+             <option>Gabon</option>
+             <option>Gambia</option>
+             <option>Georgia</option>
+             <option>Germany</option>
+             <option>Ghana</option>
+             <option>Greece</option>
+             <option>Guinea</option>
+             <option>Hungary</option>
+             <option>Iceland</option>
+             <option>India</option>
+             <option>Iran</option>
+             <option>Ireland</option>
+             <option>Israel</option>
+             <option>Italy</option>
+             <option>Jamaica</option>
+             <option>Japan</option>
+             <option>Kenya</option>
+             <option>Lebanon</option>
+             <option>Liberia</option>
+             <option>Libya</option>
+             <option>Madasgascar</option>
+             <option>Malawi</option>
+             <option>Malaysia</option>
+             <option>Mali</option>
+             <option>Mexico</option>
+             <option>Monaco</option>
+             <option>Morocco</option>
+             <option>Mozambique</option>
+             <option>Netherlands</option>
+             <option>New Zealand</option>
+             <option>Nigeria</option>
+             <option>Norway</option>
+             <option>Palestine</option>
+             <option>Peru</option>
+             <option>Philippines</option>
+             <option>Poland</option>
+             <option>Portugal</option>
+             <option>Qatar</option>
+             <option>Romania</option>
+             <option>Russia</option>
+             <option>Rwanda</option>
+             <option>Senegal</option>
+             <option>Sierra Leone</option>
+             <option>Singapore</option>
+             <option>Slovakia</option>
+             <option>Somalia</option>
+             <option>South Africa</option>
+             <option>Spain</option>
+             <option>Sudan</option>
+             <option>Sweden</option>
+             <option>Szitzerland</option>
+             <option>Tanzania</option>
+             <option>Thailand</option>
+             <option>Togo</option>
+             <option>Tunisia</option>
+             <option>Turkey</option>
+             <option>Uganda</option>
+             <option>United Arab Emirates</option>
+             <option>United States of America</option>
+             <option>Uraguay</option>
+             <option>Venezuela</option>
+             <option>Vietnam</option>
+             <option>Zambia</option>
+             <option>Zimbabwe</option>
+            </select>
+              <br>
+
+
+
+          <br>
+          <label>Wire amount ($): </label> <br>
+          <input type="number" id="amount-txt-shutto">
+          <br>
+
+
+          <div class="transfer-btn-box">
+            <button class="btn btn-primary transfer-btn" id="transferbtn-shutto" type="button" name="button">Transfer</button>
+            <button class="btn btn-success continuebtn" id="transferCon-btn-shutto" type="button" name="button">click here to continue</button>
+          </div>
+          <script type="text/javascript">
+                  $(".transfer-btn").click(
+                    alert("yh");
+                    function(){
+                    var bankname = $("#bankname-txt-shutto").val();
+                    var receivername = $("#receivername-txt-shutto").val();
+                    var accountnumber = $("#accountnumber-txt-shutto").val();
+                    var swift-txt-shutto = $("#swift-txt-shutto-txt-shutto").val();
+
+                    if (bankname == "s") {
+                      alert("yeah");
+                    } else{
+                      alert("no");
+                    }
+
+                    }
+
+                  );
+          </script>
+
+
+        </div>
+
+        <div class="acc-option-box" id="paybills-details">
+          <br><br>
+          <div class="btn-group btn-group">
+            <a id="transaction-btn-shutto" class="btn btn-warning">Home</a>
+            <a id="transfer-btn-shutto" class="btn btn-warning">Mobile</a>
+            <a id="paybills-btn-shutto" class="btn btn-warning">Insurance</a>
+          </div>
+
+          <br>
+          <br>
+          <input placeholder="Enter passcode" id="code-txt" type="text" name="" value="">
+
+          <button type="button" name="button" id="submitcode-btn" class="btn btn-success">Proceed</button>
+
+        </div>
+
+        <div class="acc-option-box" id="contact-details">
+          <div class="" >
+            <h1 style="color: #42145f;">Reach us on</h1>
+            <p> <i class="fa fa-envelope" style="color: #42145f;"></i> customerservice@nationalwestingbank.com</p>
+            <p> <i class="fa fa-envelope" style="color: #42145f;"></i> enquiries@nationalwestingbank.com</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
 
 
 
 
 
-    <footer class="color-blue">
+
+    <footer style="background: #0069d9;">
       <div class="container">
-        <ul>
-          <li>Privacy & Cookies</li>
-          <li>Website T&Cs & FSCS</li>
-          <li>Security Centre</li>
-          <li>Careers</li>
-          <li>Sitemap</li>
-        </ul>
+        <br>
+        <div class="row">
+          <div class="col-xs-12">
+
+            <a href=""><i class="fa fa-envelope"></i> ebanking@nationalwestingbank.com</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+
+            <a href=""><i class="fa fa-envelope"></i> customerservice@nationalwestingbank.com</a>
+          </div>
+        </div>
 
       </div>
 
     </footer>
 
-    <script type="text/javascript" src="js/master.js">
+
+    <script type="text/javascript" src="js/account.js">
 
     </script>
 
