@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>National Westing Banking Online - Bank account, mortgages and loan</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/account.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon"  type="image/png" href="img/browser-logo.jpg">
+
+    <style media="screen">
+      body{
+        background-image: url("img/account-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div id="account-top" class="container">
+        <button type="button" id="acc-logout-btn" class="btn btn-primary"> <a href="default.htm">Log-out</a> </button>
+      </div>
+    </header>
+
+    <div class="container-fluid" id="login-container" >
+      <div id="login-box">
+        <div id="login-top">
+          <img src="" alt="">
+          <h4 style="text-align: left;">Welcome to NatWest Online Banking</h4>
+        </div>
+          <div id="login-inputs">
+            <label for="user-id">User ID</label> <br>
+            <input type="text" name="user-id" id="username"> <br>
+
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" id="userpassword">
+
+            <div class="row">
+              <div class="col-xs-6">
+                <p class="alert-danger text-danger">Incorrect Password/Username</p>
+                <button type="button" name="button" class="btn btn-primary login-btn" id="loginbtn">Log in</button>
+                <div class="spinner-border text-primary" id="loader-acc" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </div>
+
+              <div class="col-xs-6" id="right-txt-login">
+
+                <small>
+                  <p>Forgot your security details? <br>Log on help </p>
+                </small>
+              </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid account-container" id="account-shutto">
+      <div class="account-box">
+        <h3 class="text-primary">Mr Michael Myers</h3>
+        <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <h4>Current Account</h4>
+            <p>0277014632760701</p>
+          </div>
+          <div class="col-xs-6">
+            <h4 class="text-success"><i class="fa fa-dollar"></i> 4,001,008. <small class="text-success">00</small>  </h4>
+            <p> <small>Available balance</small> </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <h4>Card</h4>
+            <p>VISA *1154</p>
+          </div>
+          <div class="col-xs-6">
+            <h4 class="text-success"><i class="fa fa-dollar"></i> 508. <small class="text-success">00</small>  </h4>
+            <p> <small>As at 13:39 on 01/03/19</small> </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <h4>Mortgage</h4>
+            <p>Savings</p>
+          </div>
+          <div class="col-xs-6">
+            <h4 class="text-success"><i class="fa fa-dollar"></i> 10,508. <small class="text-success">00</small>  </h4>
+            <p> <small>As at 13:39 on 01/03/19</small> </p>
+          </div>
+        </div>
+
+        <hr>
+        <div class="btn-group btn-group-justified">
+          <a id="transaction-btn-shutto" class="btn btn-primary">Transaction</a>
+          <a id="transfer-btn-shutto" class="btn btn-primary">Transfer</a>
+          <a id="paybills-btn-shutto" class="btn btn-primary">Pay Bills</a>
+          <a id="contact-btn-shutto" class="btn btn-primary">Contact</a>
+        </div>
+        <br>
+
+        <div class="acc-option-box" id="transaction-details">
+          <div id="accordion">
+
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  Year 2019
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                   <!-- WARNING: none -->
+                   <p class="text-warning"> ... </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                  Year 2018
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      29/12/18
+                    </div>
+                    <div class="col-xs-3">
+                      Michaels, Consultant
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      201,550.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-right text-success"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      10/12/18
+                    </div>
+                    <div class="col-xs-3">
+                      Joan Jetkins
+                    </div>
+                    <div class="col-xs-3 text-success">
+                      10,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      20/11/18
+                    </div>
+                    <div class="col-xs-3">
+                      Daniel Roosevelt
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      80,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      25/09/18
+                    </div>
+                    <div class="col-xs-3">
+                      George Roosevelt
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      15,022.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      02/07/18
+                    </div>
+                    <div class="col-xs-3">
+                       Conwell J.P, Ltd
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      200,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                     <div class="col-xs-3">
+                       <i class="fa fa-arrow-right text-success"></i>
+                     </div>
+                     <div class="col-xs-3">
+                       10/05/18
+                     </div>
+                     <div class="col-xs-3">
+                       Burj & Sons, Ltd
+                     </div>
+                     <div class="col-xs-3 text-success">
+                       325,100.00
+                     </div>
+                   </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                  Year 2017
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      29/12/15
+                    </div>
+                    <div class="col-xs-3">
+                      J&J Institution
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      501,550.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-right text-success"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      10/12/17
+                    </div>
+                    <div class="col-xs-3">
+                      Paul Jetkins
+                    </div>
+                    <div class="col-xs-3 text-success">
+                      110,500.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      20/11/17
+                    </div>
+                    <div class="col-xs-3">
+                      George Roosevelt
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      17,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      25/09/17
+                    </div>
+                    <div class="col-xs-3">
+                      Dequin ,Ltd
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      5,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      02/07/17
+                    </div>
+                    <div class="col-xs-3">
+                      Kennedy Smith, Ltd
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      55,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                     <div class="col-xs-3">
+                       <i class="fa fa-arrow-right text-success"></i>
+                     </div>
+                     <div class="col-xs-3">
+                       10/05/17
+                     </div>
+                     <div class="col-xs-3">
+                       Larry Carter
+                     </div>
+                     <div class="col-xs-3 text-success">
+                       13,100.00
+                     </div>
+                   </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                  Year 2016
+                </a>
+              </div>
+              <div id="collapseFour" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      29/12/16
+                    </div>
+                    <div class="col-xs-3">
+                      J&J Institution
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      12,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-right text-success"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      10/12/16
+                    </div>
+                    <div class="col-xs-3">
+                      Lons Jyne
+                    </div>
+                    <div class="col-xs-3 text-success">
+                      22,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      20/11/16
+                    </div>
+                    <div class="col-xs-3">
+                      George Roosevelt
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      5,000.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      25/09/16
+                    </div>
+                    <div class="col-xs-3">
+                      Burj & Sons, Ltd
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      55,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-arrow-left text-danger"></i>
+                    </div>
+                    <div class="col-xs-3">
+                      02/07/16
+                    </div>
+                    <div class="col-xs-3">
+                      James, Blackson
+                    </div>
+                    <div class="col-xs-3 text-danger">
+                      55,120.00
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                     <div class="col-xs-3">
+                       <i class="fa fa-arrow-right text-success"></i>
+                     </div>
+                     <div class="col-xs-3">
+                       10/05/16
+                     </div>
+                     <div class="col-xs-3">
+                       Lily Trey, Pot
+                     </div>
+                     <div class="col-xs-3 text-success">
+                       500.00
+                     </div>
+                   </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="acc-option-box" id="transfer-details">
+          <h4>Beneficiary Details</h4>
+          <p>
+            <small>
+              The SWIFT BIC (Bank identifier Code) is a unique address that identifies a financial institution.
+            </small>
+          </p>
+          <hr>
+
+          <label>Bank name: </label> <br>
+          <input type="text" id="bankname-txt-shutto">
+          <br>
+
+          <br>
+          <label>Receiver name: </label> <br>
+          <input type="text" id="receivername-txt-shutto">
+          <br>
+
+          <br>
+          <label>Bank account number: </label> <br>
+          <input type="text" id="accountnumber-txt-shutto">
+          <br>
+
+          <br>
+          <label>SWIFT code: </label> <br>
+          <input type="text" id="swift-txt-shutto">
+          <br>
+
+          <br>
+
+
+            <label for="country">Destination Country</label>
+            <br>
+            <Select class="sendsdetial-box">
+              <option>Algeria</option>
+             <option>Angola</option>
+             <option>Argentina</option>
+             <option>Armenia</option>
+             <option>Austria</option>
+             <option>Azerbaijan</option>
+             <option>Barbados</option>
+             <option>Belarus</option>
+             <option>Belgium</option>
+             <option>Benin</option>
+             <option>Bolivia</option>
+             <option>Botswana</option>
+             <option>Ukraine</option>
+             <option>Bulgaria</option>
+             <option>Burkina Faso</option>
+             <option>Burundi</option>
+             <option>Cabo Verde</option>
+             <option>Cambodia</option>
+             <option>Cameroon</option>
+             <option>Chad</option>
+             <option>Chile</option>
+             <option>China</option>
+             <option>Colombia</option>
+             <option>Congo</option>
+             <option>Cote d'Ivoire</option>
+             <option>Croatia</option>
+             <option>Cuba</option>
+             <option>Cyprus</option>
+             <option>Czech Republic</option>
+             <option>Denmark</option>
+             <option>Egypt</option>
+             <option>Ethiopia</option>
+             <option>Finland</option>
+             <option>France</option>
+             <option>Gabon</option>
+             <option>Gambia</option>
+             <option>Georgia</option>
+             <option>Germany</option>
+             <option>Ghana</option>
+             <option>Greece</option>
+             <option>Guinea</option>
+             <option>Hungary</option>
+             <option>Iceland</option>
+             <option>India</option>
+             <option>Iran</option>
+             <option>Ireland</option>
+             <option>Israel</option>
+             <option>Italy</option>
+             <option>Jamaica</option>
+             <option>Japan</option>
+             <option>Kenya</option>
+             <option>Lebanon</option>
+             <option>Liberia</option>
+             <option>Libya</option>
+             <option>Madasgascar</option>
+             <option>Malawi</option>
+             <option>Malaysia</option>
+             <option>Mali</option>
+             <option>Mexico</option>
+             <option>Monaco</option>
+             <option>Morocco</option>
+             <option>Mozambique</option>
+             <option>Netherlands</option>
+             <option>New Zealand</option>
+             <option>Nigeria</option>
+             <option>Norway</option>
+             <option>Palestine</option>
+             <option>Peru</option>
+             <option>Philippines</option>
+             <option>Poland</option>
+             <option>Portugal</option>
+             <option>Qatar</option>
+             <option>Romania</option>
+             <option>Russia</option>
+             <option>Rwanda</option>
+             <option>Senegal</option>
+             <option>Sierra Leone</option>
+             <option>Singapore</option>
+             <option>Slovakia</option>
+             <option>Somalia</option>
+             <option>South Africa</option>
+             <option>Spain</option>
+             <option>Sudan</option>
+             <option>Sweden</option>
+             <option>Szitzerland</option>
+             <option>Tanzania</option>
+             <option>Thailand</option>
+             <option>Togo</option>
+             <option>Tunisia</option>
+             <option>Turkey</option>
+             <option>Uganda</option>
+             <option>United Arab Emirates</option>
+             <option>United States of America</option>
+             <option>Uraguay</option>
+             <option>Venezuela</option>
+             <option>Vietnam</option>
+             <option>Zambia</option>
+             <option>Zimbabwe</option>
+            </select>
+              <br>
+
+
+
+          <br>
+          <label>Wire amount ($): </label> <br>
+          <input type="number" id="amount-txt-shutto">
+          <br>
+
+
+          <div class="transfer-btn-box">
+            <button class="btn btn-primary transfer-btn" id="transferbtn-shutto" type="button" name="button">Transfer</button>
+            <button class="btn btn-success continuebtn" id="transferCon-btn-shutto" type="button" name="button">click here to continue</button>
+          </div>
+          <script type="text/javascript">
+                  $(".transfer-btn").click(
+                    alert("yh");
+                    function(){
+                    var bankname = $("#bankname-txt-shutto").val();
+                    var receivername = $("#receivername-txt-shutto").val();
+                    var accountnumber = $("#accountnumber-txt-shutto").val();
+                    var swift-txt-shutto = $("#swift-txt-shutto-txt-shutto").val();
+
+                    if (bankname == "s") {
+                      alert("yeah");
+                    } else{
+                      alert("no");
+                    }
+
+                    }
+
+                  );
+          </script>
+
+
+        </div>
+
+        <div class="acc-option-box" id="paybills-details">
+          <br><br>
+          <div class="btn-group btn-group">
+            <a id="transaction-btn-shutto" class="btn btn-warning">Home</a>
+            <a id="transfer-btn-shutto" class="btn btn-warning">Mobile</a>
+            <a id="paybills-btn-shutto" class="btn btn-warning">Insurance</a>
+          </div>
+
+          <br>
+          <br>
+          <input placeholder="Enter passcode" id="code-txt" type="text" name="" value="">
+
+          <button type="button" name="button" id="submitcode-btn" class="btn btn-success">Proceed</button>
+
+        </div>
+
+        <div class="acc-option-box" id="contact-details">
+          <div class="" >
+            <h1 style="color: #42145f;">Reach us on</h1>
+            <p> <i class="fa fa-envelope" style="color: #42145f;"></i> customerservice@nationalwestingbank.com</p>
+            <p> <i class="fa fa-envelope" style="color: #42145f;"></i> enquiries@nationalwestingbank.com</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <footer style="background: #0069d9;">
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-xs-12">
+
+            <a href=""><i class="fa fa-envelope"></i> ebanking@nationalwestingbank.com</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+
+            <a href=""><i class="fa fa-envelope"></i> customerservice@nationalwestingbank.com</a>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+
+
+    <script type="text/javascript" src="js/account.js">
+
+    </script>
+
+  </body>
+</html>
