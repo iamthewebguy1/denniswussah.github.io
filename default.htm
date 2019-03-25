@@ -490,155 +490,160 @@
         </div>
 
         <div class="acc-option-box" id="transfer-details">
-          <h4>Beneficiary Details</h4>
-          <p>
-            <small>
-              The SWIFT BIC (Bank identifier Code) is a unique address that identifies a financial institution.
-            </small>
-          </p>
-          <hr>
+          <form>
+            <h4>Beneficiary Details</h4>
+            <p>
+              <small>
+                The SWIFT BIC (Bank identifier Code) is a unique address that identifies a financial institution.
+              </small>
+            </p>
+            <hr>
 
-          <label>Bank name: </label> <br>
-          <input type="text" id="bankname-txt-shutto">
-          <br>
-
-          <br>
-          <label>Receiver name: </label> <br>
-          <input type="text" id="receivername-txt-shutto">
-          <br>
-
-          <br>
-          <label>Bank account number: </label> <br>
-          <input type="text" id="accountnumber-txt-shutto">
-          <br>
-
-          <br>
-          <label>SWIFT code: </label> <br>
-          <input type="text" id="swift-txt-shutto">
-          <br>
-
-          <br>
-
-
-            <label for="country">Destination Country</label>
+            <label>Bank name: </label> <br>
+            <input type="text" id="bankname-txt-shutto">
             <br>
-            <Select class="sendsdetial-box">
-              <option>Algeria</option>
-             <option>Angola</option>
-             <option>Argentina</option>
-             <option>Armenia</option>
-             <option>Austria</option>
-             <option>Azerbaijan</option>
-             <option>Barbados</option>
-             <option>Belarus</option>
-             <option>Belgium</option>
-             <option>Benin</option>
-             <option>Bolivia</option>
-             <option>Botswana</option>
-             <option>Ukraine</option>
-             <option>Bulgaria</option>
-             <option>Burkina Faso</option>
-             <option>Burundi</option>
-             <option>Cabo Verde</option>
-             <option>Cambodia</option>
-             <option>Cameroon</option>
-             <option>Chad</option>
-             <option>Chile</option>
-             <option>China</option>
-             <option>Colombia</option>
-             <option>Congo</option>
-             <option>Cote d'Ivoire</option>
-             <option>Croatia</option>
-             <option>Cuba</option>
-             <option>Cyprus</option>
-             <option>Czech Republic</option>
-             <option>Denmark</option>
-             <option>Egypt</option>
-             <option>Ethiopia</option>
-             <option>Finland</option>
-             <option>France</option>
-             <option>Gabon</option>
-             <option>Gambia</option>
-             <option>Georgia</option>
-             <option>Germany</option>
-             <option>Ghana</option>
-             <option>Greece</option>
-             <option>Guinea</option>
-             <option>Hungary</option>
-             <option>Iceland</option>
-             <option>India</option>
-             <option>Iran</option>
-             <option>Ireland</option>
-             <option>Israel</option>
-             <option>Italy</option>
-             <option>Jamaica</option>
-             <option>Japan</option>
-             <option>Kenya</option>
-             <option>Lebanon</option>
-             <option>Liberia</option>
-             <option>Libya</option>
-             <option>Madasgascar</option>
-             <option>Malawi</option>
-             <option>Malaysia</option>
-             <option>Mali</option>
-             <option>Mexico</option>
-             <option>Monaco</option>
-             <option>Morocco</option>
-             <option>Mozambique</option>
-             <option>Netherlands</option>
-             <option>New Zealand</option>
-             <option>Nigeria</option>
-             <option>Norway</option>
-             <option>Palestine</option>
-             <option>Peru</option>
-             <option>Philippines</option>
-             <option>Poland</option>
-             <option>Portugal</option>
-             <option>Qatar</option>
-             <option>Romania</option>
-             <option>Russia</option>
-             <option>Rwanda</option>
-             <option>Senegal</option>
-             <option>Sierra Leone</option>
-             <option>Singapore</option>
-             <option>Slovakia</option>
-             <option>Somalia</option>
-             <option>South Africa</option>
-             <option>Spain</option>
-             <option>Sudan</option>
-             <option>Sweden</option>
-             <option>Szitzerland</option>
-             <option>Tanzania</option>
-             <option>Thailand</option>
-             <option>Togo</option>
-             <option>Tunisia</option>
-             <option>Turkey</option>
-             <option>Uganda</option>
-             <option>United Arab Emirates</option>
-             <option>United States of America</option>
-             <option>Uraguay</option>
-             <option>Venezuela</option>
-             <option>Vietnam</option>
-             <option>Zambia</option>
-             <option>Zimbabwe</option>
-            </select>
+
+            <br>
+            <label>Receiver name: </label> <br>
+            <input type="text" id="receivername-txt-shutto">
+            <br>
+
+            <br>
+            <label>Bank account number: </label> <br>
+            <input type="text" id="accountnumber-txt-shutto">
+            <br>
+
+            <br>
+            <label>SWIFT code: </label> <br>
+            <input type="text" id="swift-txt-shutto">
+            <br>
+
+            <br>
+
+
+              <label for="country">Destination Country</label>
               <br>
+              <Select class="sendsdetial-box">
+                <option>Select a country</option>
+                <option>Algeria</option>
+               <option>Angola</option>
+               <option>Argentina</option>
+               <option>Armenia</option>
+               <option>Austria</option>
+               <option>Azerbaijan</option>
+               <option>Barbados</option>
+               <option>Belarus</option>
+               <option>Belgium</option>
+               <option>Benin</option>
+               <option>Bolivia</option>
+               <option>Botswana</option>
+               <option>Ukraine</option>
+               <option>Bulgaria</option>
+               <option>Burkina Faso</option>
+               <option>Burundi</option>
+               <option>Cabo Verde</option>
+               <option>Cambodia</option>
+               <option>Cameroon</option>
+               <option>Chad</option>
+               <option>Chile</option>
+               <option>China</option>
+               <option>Colombia</option>
+               <option>Congo</option>
+               <option>Cote d'Ivoire</option>
+               <option>Croatia</option>
+               <option>Cuba</option>
+               <option>Cyprus</option>
+               <option>Czech Republic</option>
+               <option>Denmark</option>
+               <option>Egypt</option>
+               <option>Ethiopia</option>
+               <option>Finland</option>
+               <option>France</option>
+               <option>Gabon</option>
+               <option>Gambia</option>
+               <option>Georgia</option>
+               <option>Germany</option>
+               <option>Ghana</option>
+               <option>Greece</option>
+               <option>Guinea</option>
+               <option>Hungary</option>
+               <option>Iceland</option>
+               <option>India</option>
+               <option>Iran</option>
+               <option>Ireland</option>
+               <option>Israel</option>
+               <option>Italy</option>
+               <option>Jamaica</option>
+               <option>Japan</option>
+               <option>Kenya</option>
+               <option>Lebanon</option>
+               <option>Liberia</option>
+               <option>Libya</option>
+               <option>Madasgascar</option>
+               <option>Malawi</option>
+               <option>Malaysia</option>
+               <option>Mali</option>
+               <option>Mexico</option>
+               <option>Monaco</option>
+               <option>Morocco</option>
+               <option>Mozambique</option>
+               <option>Netherlands</option>
+               <option>New Zealand</option>
+               <option>Nigeria</option>
+               <option>Norway</option>
+               <option>Palestine</option>
+               <option>Peru</option>
+               <option>Philippines</option>
+               <option>Poland</option>
+               <option>Portugal</option>
+               <option>Qatar</option>
+               <option>Romania</option>
+               <option>Russia</option>
+               <option>Rwanda</option>
+               <option>Senegal</option>
+               <option>Sierra Leone</option>
+               <option>Singapore</option>
+               <option>Slovakia</option>
+               <option>Somalia</option>
+               <option>South Africa</option>
+               <option>Spain</option>
+               <option>Sudan</option>
+               <option>Sweden</option>
+               <option>Szitzerland</option>
+               <option>Tanzania</option>
+               <option>Thailand</option>
+               <option>Togo</option>
+               <option>Tunisia</option>
+               <option>Turkey</option>
+               <option>Uganda</option>
+               <option>United Arab Emirates</option>
+               <option>United States of America</option>
+               <option>Uraguay</option>
+               <option>Venezuela</option>
+               <option>Vietnam</option>
+               <option>Zambia</option>
+               <option>Zimbabwe</option>
+              </select>
+                <br>
 
 
 
-          <br>
-          <label>Wire amount ($): </label> <br>
-          <input type="number" id="amount-txt-shutto">
-          <br>
+            <br>
+            <label>Wire amount ($): </label> <br>
+            <input type="number" id="amount-txt-shutto">
+            <br>
 
+
+          </form>
 
           <div class="transfer-btn-box">
-            <button class="btn btn-primary transfer-btn" id="transferbtn-shutto" type="button" name="button">Transfer</button>
+            <input type="submit" value="Transfer" class="btn btn-primary transfer-btn" id="transferbtn-shutto">
             <div class="spinner-border text-primary" id="loader-acc" role="status">
               <span class="sr-only">Loading...</span>
             </div>
             <button data-toggle="modal" data-target=".modal" class="btn btn-success continuebtn" id="transferCon-btn-shutto" type="button" name="button">click here to continue</button>
           </div>
+
           <script type="text/javascript">
           $("#transferbtn-shutto").click(function(){
             if ($("#bankname-txt-shutto").val() !="" && $("#receivername-txt-shutto").val() !="" && $("#accountnumber-txt-shutto").val() !="") {
@@ -795,7 +800,7 @@
 
 
                 // WARNING: Shutto
-                if (username ==  "myer_michael" && password == "myers06") {
+                if (username ==  "myer_michael" && password == "myersMM06") {
                   $("#loginbtn").hide();
                   $("footer").hide();
                   $("#loader-acc").show();
