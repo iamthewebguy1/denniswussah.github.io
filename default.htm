@@ -635,6 +635,10 @@
 
 
           </form>
+          <br>
+          <span class="badge badge-warning" id="blank-warning-txt-shutto" style="display:none;">
+            Fill all inputs
+          </span>
 
           <div class="transfer-btn-box">
             <input type="submit" value="Transfer" class="btn btn-primary transfer-btn" id="transferbtn-shutto">
@@ -661,7 +665,10 @@
                 );
               }
             } else {
-              alert("cant leave blank");
+              $("#blank-warning-txt-shutto").show();
+              setTimeout(function(){
+                $("#blank-warning-txt-shutto").hide();
+              },2000);
 
             }
           });
