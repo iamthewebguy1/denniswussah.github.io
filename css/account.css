@@ -119,11 +119,11 @@ header button{
   margin-top: 10px;
   padding-bottom: 10px;
 }
-#transfer-details input{
+#transfer-details input, .acc-option-box input{
   width: 80%;
 }
   @media screen and (max-width: 600px) {
-    #transfer-details input{
+    #transfer-details input, .acc-option-box input{
       width: 250px;
     }
   }
@@ -135,7 +135,7 @@ header button{
   width: 230px;
 }
 
-#transferCon-btn-shutto, .continuebtn{
+#transferCon-btn-shutto, #transferCon-btn-evans, .continuebtn{
   display: none;
 }
 
