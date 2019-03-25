@@ -22,20 +22,28 @@
     <link rel="icon"  type="image/png" href="img/browser-logo.jpg">
 
     <style media="screen">
-      body{
+      #login-container{
         background-image: url("img/account-bg.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-
+      }
+      body{
+        background-color: #0065a5;
+        font-size: 1.5rem;
+      }
+      html button{
+        font-size: 1.5rem!important;
       }
     </style>
   </head>
 
   <body>
     <header>
-      <div id="account-top" class="container">
-        <button type="button" id="acc-logout-btn" class="btn btn-primary"> <a href="default.htm">Log-out</a> </button>
+      <div class="menu">
+        <i class="fa fa-person"> <a href="default.htm">Logout</a> </i>
+      </div>
+      <div id="account-top" class="container" style="background: white">
       </div>
     </header>
 
@@ -43,19 +51,19 @@
       <div id="login-box">
         <div id="login-top">
           <img src="" alt="">
-          <h4 style="text-align: left;">Welcome to NatWest Online Banking</h4>
+          <h4 style="text-align: center;">NatWest Online Banking</h4>
         </div>
           <div id="login-inputs">
             <label for="user-id">User ID</label> <br>
             <input type="text" name="user-id" id="username"> <br>
-
+            <br>
             <label for="password">Password</label> <br>
             <input type="password" name="password" id="userpassword">
 
             <div class="row">
               <div class="col-xs-6">
                 <p class="alert-danger text-danger">Incorrect Password/Username</p>
-                <button type="button" name="button" class="btn btn-primary login-btn" id="loginbtn">Log in</button>
+                <button type="button" name="button" class="btn btn-primary login-btn" id="loginbtn">Login</button>
                 <div class="spinner-border text-primary" id="loader-acc" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
@@ -121,7 +129,7 @@
         <br>
 
         <div class="acc-option-box" id="transaction-details">
-          <div id="accordion">
+          <div id="accordion" class="option-details-box">
 
             <div class="card">
               <div class="card-header">
@@ -626,26 +634,33 @@
 
           <div class="transfer-btn-box">
             <button class="btn btn-primary transfer-btn" id="transferbtn-shutto" type="button" name="button">Transfer</button>
-            <button class="btn btn-success continuebtn" id="transferCon-btn-shutto" type="button" name="button">click here to continue</button>
+            <div class="spinner-border text-primary" id="loader-acc" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <button data-toggle="modal" data-target=".modal" class="btn btn-success continuebtn" id="transferCon-btn-shutto" type="button" name="button">click here to continue</button>
           </div>
           <script type="text/javascript">
-                  $(".transfer-btn").click(
-                    alert("yh");
-                    function(){
-                    var bankname = $("#bankname-txt-shutto").val();
-                    var receivername = $("#receivername-txt-shutto").val();
-                    var accountnumber = $("#accountnumber-txt-shutto").val();
-                    var swift-txt-shutto = $("#swift-txt-shutto-txt-shutto").val();
+          $("#transferbtn-shutto").click(function(){
+            if ($("#bankname-txt-shutto").val() !="" && $("#receivername-txt-shutto").val() !="" && $("#accountnumber-txt-shutto").val() !="") {
+              if (isNaN($("#amount-txt-shutto").val())) {
+                alert("Please enter correct figure");
+              } else {
+                $("#transferbtn-shutto").hide();
+                $("#loader-acc").show();
+                setTimeout(
+                  function(){
+                    $("#loader-acc").hide();
+                    $("#transferCon-btn-shutto").fadeIn();
+                  }, 6000
 
-                    if (bankname == "s") {
-                      alert("yeah");
-                    } else{
-                      alert("no");
-                    }
+                );
+              }
+            } else {
+              alert("cant leave blank");
 
-                    }
+            }
+          });
 
-                  );
           </script>
 
 
@@ -676,6 +691,71 @@
 
         </div>
       </div>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal fade allmodal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+
+
+            </div>
+            <div class="modal-body">
+              <div class="transaction-processing-shutto" id="transaction-processing-shutto" style="text-align: center">
+                <h3>Please wait, your transaction is processing...</h3>
+                <img src="img/loader-modal.gif" style="width: 30%;" alt="">
+
+              </div>
+
+              <div class="transaction-processing-code">
+                <h5>Transaction might take a while, please provide us with your secret code</h5>
+                <div>
+                  <center>
+                    <input type="number" name="code" style="width: 150px;" id="secretcode-txt-shutto">
+                    <br>
+                    <br>
+                    <button class="btn btn-primary" id="secretcode-btn-shutto" type="button" name="button">send</button>
+                  </center>
+                </div>
+
+              </div>
+
+
+
+              <div class="transaction-leave-shutto" style="text-align: center;">
+                <button class="btn btn-success" type="button" name="button"><a href="default.htm" style="color: snow;"> Continue </a> </button>
+              </div>
+
+              <script type="text/javascript">
+                  $("#secretcode-btn-shutto").click(function(){
+                    if ( $("#secretcode-txt-shutto").val() =="0666") {
+                      $("#secretcode-btn-shutto").val("")
+                      $(".transaction-processing-code").hide();
+                      $("#transaction-processing-shutto").fadeIn();
+                      setTimeout(function(){
+                        $("#transaction-processing-shutto").hide();
+                        $(".transaction-leave-shutto").fadeIn();
+                      }, 6000);
+                    } else {
+                      alert("Failed to process your transaction. Try again");
+                    }
+                  });
+
+              </script>
+
+
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
 
@@ -705,8 +785,77 @@
 
     </footer>
 
+    <script type="text/javascript">
+            $(".alert-danger").hide();
+            $(".login-btn").click(
+              function(){
+                var username = $("#username").val();
+                var password = $("#userpassword").val();
 
-    <script type="text/javascript" src="js/account.js">
+                if (username ==  "s" && password == "s") {
+                  $("#loginbtn").hide();
+                  $("footer").hide();
+                  $("#loader-acc").show();
+                  setTimeout(function(){
+                    $(".loader").hide();
+                    $("#login-container").hide();
+                    $("#account-shutto").fadeIn('slow');
+                    $("#transaction-details").show();
+                    $("header .menu").show();
+
+
+                  }, 2000);
+
+                }
+                else {
+                  $(".alert-danger").show();
+                  setTimeout(function(){
+                    $(".alert-danger").hide();
+                  },3000);
+                }
+              }
+            );
+
+
+
+
+
+            $("#transaction-btn-shutto").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#transaction-details").fadeIn('slow');
+              }
+
+            );
+
+            $("#transfer-btn-shutto").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#transfer-details").fadeIn('slow');
+              }
+
+            );
+
+            $("#paybills-btn-shutto").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#paybills-details").fadeIn('slow');
+              }
+            );
+
+            $("#contact-btn-shutto").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#contact-details").fadeIn('slow');
+              }
+            );
+
+
+
+
+          </script>
+
+    <script type="text/javascript"  src="js/account.js">
 
     </script>
 
