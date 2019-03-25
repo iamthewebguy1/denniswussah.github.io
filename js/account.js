@@ -7,6 +7,9 @@ $("#account-top").hide();
 $("#transaction-processing-shutto").hide();
 $(".transaction-leave-shutto").hide();
 
+$("#transaction-processing-evans").hide();
+$(".transaction-leave-evans").hide();
+
 
 
 $("#submitcode-btn").click(
