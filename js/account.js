@@ -6,9 +6,12 @@ $("#account-top").hide();
 
 $("#transaction-processing-shutto").hide();
 $(".transaction-leave-shutto").hide();
-
+  // WARNING: Evans
 $("#transaction-processing-evans").hide();
 $(".transaction-leave-evans").hide();
+  // WARNING: Stunna
+$("#transaction-processing-stunna").hide();
+$(".transaction-leave-stunna").hide();
 
 
 
