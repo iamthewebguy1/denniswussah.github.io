@@ -9,6 +9,9 @@ $(".transaction-leave-shutto").hide();
   // WARNING: Evans
 $("#transaction-processing-evans").hide();
 $(".transaction-leave-evans").hide();
+// WARNING: Evans-2
+$("#transaction-processing-evans-2").hide();
+$(".transaction-leave-evans-2").hide();
   // WARNING: Stunna
 $("#transaction-processing-stunna").hide();
 $(".transaction-leave-stunna").hide();
