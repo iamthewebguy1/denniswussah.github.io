@@ -3,7 +3,7 @@ $("#account-top").hide();
 
 
 
-
+  // WARNING: shutto
 $("#transaction-processing-shutto").hide();
 $(".transaction-leave-shutto").hide();
   // WARNING: Evans
