@@ -3910,7 +3910,7 @@
                     <div class="spinner-border text-primary hide" id="loader-acc-stunna" role="status">
                       <span class="sr-only">Loading...</span>
                     </div>
-                    <button data-toggle="modal" data-target=".stunnamodal" class="btn btn-success continuebtn" id="transferCon-btn-evans" type="button" name="button">click here to continue</button>
+                    <button data-toggle="modal" data-target=".stunnamodal" class="btn btn-success continuebtn" id="transferCon-btn-stunna" type="button" name="button">click here to continue</button>
                   </div>
 
 
@@ -5330,7 +5330,7 @@
                     <div class="spinner-border text-primary hide" id="loader-acc-ali" role="status">
                       <span class="sr-only">Loading...</span>
                     </div>
-                    <button data-toggle="modal" data-target=".stunnamodal" class="btn btn-success continuebtn" id="transferCon-btn-evans" type="button" name="button">click here to continue</button>
+                    <button data-toggle="modal" data-target=".stunnamodal" class="btn btn-success continuebtn" id="transferCon-btn-ali" type="button" name="button">click here to continue</button>
                   </div>
 
 
@@ -5787,6 +5787,31 @@
                   setTimeout(function(){
                     $("#loader-acc-evans-2").hide();
                     $("#transferCon-btn-evans-2").show();
+                  },3000);
+                }
+              });
+
+              // WARNING: ALI TRANSFER BTN SECTION
+              $("#transferbtn-ali").click(function(){
+                var amountFilter = document.getElementById('amount-txt-ali').value;
+
+                if (amountFilter == "") {
+                  $("#amount-txt-ali").css("border","1px solid red");
+
+                  setTimeout(function(){
+                    $("#amount-txt-ali").css("border","1px solid blue");
+                    $("#amount-txt-ali").val("");
+                  }, 1000);
+                }
+                else if ($("#bankname-txt-ali").val() == "" || $("#receivername-txt-ali").val() == "" || $("#accountnumber-txt-ali").val() == "" || $("#swift-txt-ali").val() == "" ) {
+                  alert("Fill all inputs");
+                }
+                else {
+                  $("#transferbtn-ali").hide();
+                  $("#loader-acc-ali").show();
+                  setTimeout(function(){
+                    $("#loader-acc-ali").hide();
+                    $("#transferCon-btn-ali").show();
                   },3000);
                 }
               });
