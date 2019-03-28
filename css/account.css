@@ -135,7 +135,7 @@ header button{
   width: 230px;
 }
 
-#transferCon-btn-shutto, #transferCon-btn-evans, .continuebtn{
+#transferCon-btn-shutto, #transferCon-btn-evans, .continuebtn,{
   display: none;
 }
 
