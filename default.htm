@@ -2517,9 +2517,10 @@
 
           <!-- WARNING: Evans -->
           <div class="container-fluid account-container" id="account-evans">
+
             <div class="account-box">
               <h3 class="text-primary">Mr David Glover</h3>
-              <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
+              <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
 
               <div class="row">
                 <div class="col-xs-6">
@@ -5577,7 +5578,7 @@
 
 
             // WARNING: STUNNA SECTION
-            $("#transaction-btn-stunna").click(
+            $("#transaction-btn-evans").click(
               function(){
                 $(".acc-option-box").hide();
                 $("#transaction-details-evans").fadeIn('slow');
@@ -5698,12 +5699,16 @@
 
 
               else {
+                alert("This account has been disabled. Please visit our nearest branch to rectify this issue");
+                /**
                 $("#transferbtn-evans").hide();
                 $("#loader-acc-evans").show();
                 setTimeout(function(){
                   $("#loader-acc-evans").hide();
                   $("#transferCon-btn-evans").show();
                 },3000);
+
+                **/
               }
             });
 
