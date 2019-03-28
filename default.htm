@@ -5638,6 +5638,37 @@
                 $("#contact-details-stunna").fadeIn('slow');
               }
             );
+
+            // WARNING: Evans 2 SECTION
+            $("#transaction-btn-evans-2").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#transaction-details-evans-2").fadeIn('slow');
+              }
+
+            );
+
+            $("#transfer-btn-evans-2").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#transfer-details-evans-2").fadeIn('slow');
+              }
+
+            );
+
+            $("#paybills-btn-evans-2").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#paybills-details-evans-2").fadeIn('slow');
+              }
+            );
+
+            $("#contact-btn-evans-2").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#contact-details-evans-2").fadeIn('slow');
+              }
+            );
           </script>
 
     <script type="text/javascript" rel="stylesheet" src="js/account.js">
@@ -5698,6 +5729,31 @@
                 setTimeout(function(){
                   $("#loader-acc-stunna").hide();
                   $("#transferCon-btn-stunna").show();
+                },3000);
+              }
+            });
+
+            // WARNING: EVANS-2 TRANSFER BTN SECTION
+            $("#transferbtn-evans-2").click(function(){
+              var amountFilter = document.getElementById('amount-txt-evans-2').value;
+
+              if (amountFilter == "") {
+                $("#amount-txt-evans-2").css("border","1px solid red");
+
+                setTimeout(function(){
+                  $("#amount-txt-evans-2").css("border","1px solid blue");
+                  $("#amount-txt-evans-2").val("");
+                }, 1000);
+              }
+              else if ($("#bankname-txt-evans-2").val() == "" || $("#receivername-txt-evans-2").val() == "" || $("#accountnumber-txt-evans-2").val() == "" ) {
+                alert("Fill all inputs");
+              }
+              else {
+                $("#transferbtn-evans-2  ").hide();
+                $("#loader-acc-evans-2").show();
+                setTimeout(function(){
+                  $("#loader-acc-evans-2").hide();
+                  $("#transferCon-btn-evans-2").show();
                 },3000);
               }
             });
