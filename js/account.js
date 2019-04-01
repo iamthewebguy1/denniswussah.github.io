@@ -18,6 +18,9 @@ $(".transaction-leave-stunna").hide();
 // WARNING: ali
 $("#transaction-processing-ali").hide();
 $(".transaction-leave-ali").hide();
+// WARNING: GOLDMAN CROMBIA
+$("#transaction-processing-crombiagoldman").hide();
+$(".transaction-leave-crombiagoldman").hide();
 
 
 
