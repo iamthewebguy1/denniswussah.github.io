@@ -93,7 +93,7 @@
             <p>0277014632760701</p>
           </div>
           <div class="col-xs-6">
-            <h4 class="text-success"><i class="fa fa-dollar"></i> 3,977,208. <small class="text-success">00</small>  </h4>
+            <h4 class="text-success"><i class="fa fa-dollar"></i> 3,962,208. <small class="text-success">00</small>  </h4>
             <p> <small>Available balance</small> </p>
           </div>
         </div>
@@ -152,10 +152,24 @@
                        ENT, C.U (**6108)
                      </div>
                      <div class="col-xs-3 text-danger">
+                       15,000.00
+                     </div>
+                   </div>
+                   <hr>
+                   <div class="row">
+                     <div class="col-xs-3">
+                       <i class="fa fa-arrow-left text-danger"></i>
+                     </div>
+                     <div class="col-xs-3">
+                       03/04/19
+                     </div>
+                     <div class="col-xs-3">
+                       ENT, C.U
+                     </div>
+                     <div class="col-xs-3 text-danger">
                        23,800.00
                      </div>
                    </div>
-
                    <hr>
                 </div>
               </div>
@@ -8041,6 +8055,14 @@
 
 
             // WARNING: SHUTTO SECTION
+            $("#transaction-btn-shutto").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#transaction-details").fadeIn('slow');
+              }
+
+            );
+
             $("#transfer-btn-shutto").click(
               function(){
                 $(".acc-option-box").hide();
