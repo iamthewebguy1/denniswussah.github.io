@@ -85,7 +85,7 @@
     <div class="container-fluid account-container" id="account-shutto">
       <div class="account-box">
         <h3 class="text-primary">Mr Michael Myers</h3>
-        <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
+        <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
 
         <div class="row">
           <div class="col-xs-6">
@@ -149,7 +149,7 @@
                        03/04/19
                      </div>
                      <div class="col-xs-3">
-                       ENT, C.U (**6108)
+                       ENT, C.U
                      </div>
                      <div class="col-xs-3 text-danger">
                        15,000.00
@@ -164,7 +164,7 @@
                        03/04/19
                      </div>
                      <div class="col-xs-3">
-                       ENT, C.U (**6108)
+                       ENT, C.U
                      </div>
                      <div class="col-xs-3 text-danger">
                        23,800.00
@@ -2427,15 +2427,7 @@
               if (isNaN($("#amount-txt-shutto").val())) {
                 alert("Please enter correct figure");
               } else {
-                $("#transferbtn-shutto").hide();
-                $("#loader-acc").show();
-                setTimeout(
-                  function(){
-                    $("#loader-acc").hide();
-                    $("#transferCon-btn-shutto").fadeIn();
-                  }, 6000
-
-                );
+                alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch.")
               }
             } else {
               $("#blank-warning-txt-shutto").show();
@@ -8055,14 +8047,6 @@
 
 
             // WARNING: SHUTTO SECTION
-            $("#transaction-btn-shutto").click(
-              function(){
-                $(".acc-option-box").hide();
-                $("#transaction-details").fadeIn('slow');
-              }
-
-            );
-
             $("#transfer-btn-shutto").click(
               function(){
                 $(".acc-option-box").hide();
