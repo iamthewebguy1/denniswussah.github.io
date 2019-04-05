@@ -4770,7 +4770,7 @@
           <div class="container-fluid account-container" id="account-ali">
             <div class="account-box">
               <h3 class="text-primary">Miss Valentina brown</h3>
-              <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
+              <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
 
               <div class="row">
                 <div class="col-xs-6">
@@ -8319,12 +8319,7 @@
                 alert("Fill all inputs");
               }
               else {
-                $("#transferbtn-ali").hide();
-                $("#loader-acc-ali").show();
-                setTimeout(function(){
-                  $("#loader-acc-ali").hide();
-                  $("#transferCon-btn-ali").show();
-                },3000);
+                alert("Our security system has disabled this account due to a security breach associated with this account. Please visit our nearest branch to rectify this issue");
               }
             });
 
