@@ -85,7 +85,7 @@
     <div class="container-fluid account-container" id="account-shutto">
       <div class="account-box">
         <h3 class="text-primary">Mr Michael Myers</h3>
-        <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
+        <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
 
         <div class="row">
           <div class="col-xs-6">
@@ -93,7 +93,7 @@
             <p>0277014632760701</p>
           </div>
           <div class="col-xs-6">
-            <h4 class="text-success"><i class="fa fa-dollar"></i> 3,962,208. <small class="text-success">00</small>  </h4>
+            <h4 class="text-success"><i class="fa fa-dollar"></i> 4,001,008. <small class="text-success">00</small>  </h4>
             <p> <small>Available balance</small> </p>
           </div>
         </div>
@@ -105,7 +105,7 @@
           </div>
           <div class="col-xs-6">
             <h4 class="text-success"><i class="fa fa-dollar"></i> 508. <small class="text-success">00</small>  </h4>
-            <p> <small>As at 13:39 on 01/04/19</small> </p>
+            <p> <small>As at 13:39 on 01/03/19</small> </p>
           </div>
         </div>
 
@@ -116,7 +116,7 @@
           </div>
           <div class="col-xs-6">
             <h4 class="text-success"><i class="fa fa-dollar"></i> 10,508. <small class="text-success">00</small>  </h4>
-            <p> <small>As at 13:39 on 01/04/19</small> </p>
+            <p> <small>As at 13:39 on 01/03/19</small> </p>
           </div>
         </div>
 
@@ -141,36 +141,7 @@
               <div id="collapseOne" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
                    <!-- WARNING: none -->
-                   <div class="row">
-                     <div class="col-xs-3">
-                       <i class="fa fa-arrow-left text-danger"></i>
-                     </div>
-                     <div class="col-xs-3">
-                       03/04/19
-                     </div>
-                     <div class="col-xs-3">
-                       ENT, C.U
-                     </div>
-                     <div class="col-xs-3 text-danger">
-                       15,000.00
-                     </div>
-                   </div>
-                   <hr>
-                   <div class="row">
-                     <div class="col-xs-3">
-                       <i class="fa fa-arrow-left text-danger"></i>
-                     </div>
-                     <div class="col-xs-3">
-                       03/04/19
-                     </div>
-                     <div class="col-xs-3">
-                       ENT, C.U
-                     </div>
-                     <div class="col-xs-3 text-danger">
-                       23,800.00
-                     </div>
-                   </div>
-                   <hr>
+                   <p class="text-warning"> ... </p>
                 </div>
               </div>
             </div>
@@ -2427,7 +2398,15 @@
               if (isNaN($("#amount-txt-shutto").val())) {
                 alert("Please enter correct figure");
               } else {
-                alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch.")
+                $("#transferbtn-shutto").hide();
+                $("#loader-acc").show();
+                setTimeout(
+                  function(){
+                    $("#loader-acc").hide();
+                    $("#transferCon-btn-shutto").fadeIn();
+                  }, 6000
+
+                );
               }
             } else {
               $("#blank-warning-txt-shutto").show();
@@ -2561,7 +2540,7 @@
                 </div>
                 <div class="col-xs-6">
                   <h4 class="text-success"><i class="fa fa-dollar"></i> 215. <small class="text-success">20</small>  </h4>
-                  <p> <small>As at 13:39 on 01/04/19</small> </p>
+                  <p> <small>As at 13:39 on 01/03/19</small> </p>
                 </div>
               </div>
 
@@ -3301,10 +3280,10 @@
           <!-- ///// Evans ******************************** -->
 
 
-          <!-- WARNING: STUNNA -->
+          <!-- WARNING: STUNNA + CASTY -->
           <div class="container-fluid account-container" id="account-stunna">
             <div class="account-box">
-              <h3 class="text-primary">Mr Nelson Jude</h3>
+              <h3 class="text-primary">Miss Sally Davies</h3>
               <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
 
               <div class="row">
@@ -3313,7 +3292,7 @@
                   <p>007-895-412-3245</p>
                 </div>
                 <div class="col-xs-6">
-                  <h4 class="text-success"><i class="fa fa-dollar"></i> 120,250. <small class="text-success">10</small>  </h4>
+                  <h4 class="text-success"><i class="fa fa-gbp"></i> 5,220,250. <small class="text-success">10</small>  </h4>
                   <p> <small>Available balance</small> </p>
                 </div>
               </div>
@@ -3324,8 +3303,8 @@
                   <p>VISA *3245</p>
                 </div>
                 <div class="col-xs-6">
-                  <h4 class="text-success"><i class="fa fa-dollar"></i> 215. <small class="text-success">20</small>  </h4>
-                  <p> <small>As at 13:39 on 01/04/18</small> </p>
+                  <h4 class="text-success"><i class="fa fa-gbp"></i> 215. <small class="text-success">20</small>  </h4>
+                  <p> <small>As at 13:39 on 01/04/19</small> </p>
                 </div>
               </div>
 
@@ -3351,81 +3330,22 @@
                     </div>
                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
                       <div class="card-body">
-                         <!-- WARNING: transaction -->
+                         <!-- WARNING: transaction********* -->
                          <div class="row">
                            <div class="col-xs-3">
                              <i class="fa fa-arrow-left text-success"></i>
                            </div>
                            <div class="col-xs-3">
-                             31/01/19
+                             24/04/19
                            </div>
                            <div class="col-xs-3">
-                             Thomas, Clark
+                             John, Morgan
                            </div>
                            <div class="col-xs-3 text-success">
-                             228,000.00
+                             5,200,000.00
                            </div>
                          </div>
 
-                         <div class="row">
-                           <div class="col-xs-3">
-                             <i class="fa fa-arrow-left text-danger"></i>
-                           </div>
-                           <div class="col-xs-3">
-                             04/02/19
-                           </div>
-                           <div class="col-xs-3">
-                             Mashrook, Gold Company
-                           </div>
-                           <div class="col-xs-3 text-danger">
-                             68,000.00
-                           </div>
-                         </div>
-
-                         <div class="row">
-                           <div class="col-xs-3">
-                             <i class="fa fa-arrow-left text-danger"></i>
-                           </div>
-                           <div class="col-xs-3">
-                             04/02/19
-                           </div>
-                           <div class="col-xs-3">
-                             Mashrook, Gold Company
-                           </div>
-                           <div class="col-xs-3 text-danger">
-                             68,000.00
-                           </div>
-                         </div>
-
-                         <div class="row">
-                           <div class="col-xs-3">
-                             <i class="fa fa-arrow-left text-danger"></i>
-                           </div>
-                           <div class="col-xs-3">
-                             05/02/19
-                           </div>
-                           <div class="col-xs-3">
-                             Abdulla Mohammed, Dafallah
-                           </div>
-                           <div class="col-xs-3 text-danger">
-                             7,850.00
-                           </div>
-                         </div>
-
-                         <div class="row">
-                           <div class="col-xs-3">
-                             <i class="fa fa-arrow-left text-danger"></i>
-                           </div>
-                           <div class="col-xs-3">
-                             13/02/19
-                           </div>
-                           <div class="col-xs-3">
-                             Oceanwave, Delivery Service
-                           </div>
-                           <div class="col-xs-3 text-danger">
-                             31,900.00
-                           </div>
-                         </div>
 
                       </div>
                     </div>
@@ -3931,7 +3851,7 @@
                   <div class="spinner-border text-primary hide" id="loader-acc-stunna" role="status">
                     <span class="sr-only">Loading...</span>
                   </div>
-                  <button data-toggle="modal" data-target=".stunnamodal" class="btn btn-success continuebtn" id="transferCon-btn-stunna" type="button" name="button">click here to continue</button>
+                  <button data-toggle="modal" data-target=".stunnamodal" class="btn btn-success continuebtn" id="transferCon-btn-evans" type="button" name="button">click here to continue</button>
                 </div>
 
 
@@ -4058,7 +3978,7 @@
                 </div>
                 <div class="col-xs-6">
                   <h4 class="text-success"><i class="fa fa-dollar"></i> 215. <small class="text-success">20</small>  </h4>
-                  <p> <small>As at 13:39 on 01/04/18</small> </p>
+                  <p> <small>As at 13:39 on 01/03/18</small> </p>
                 </div>
               </div>
 
@@ -4766,11 +4686,11 @@
 
           <!-- ///// Evans - 2 ******************************** -->
 
-          <!-- WARNING: ALI -->
-          <div class="container-fluid account-container" id="account-ali">
+          <!-- WARNING: STUNNA -->
+          <div class="container-fluid account-container" id="account-stunnaa">
             <div class="account-box">
-              <h3 class="text-primary">Miss Valentina brown</h3>
-              <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
+              <h3 class="text-primary">Mr Nelson Jude</h3>
+              <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
 
               <div class="row">
                 <div class="col-xs-6">
@@ -4778,7 +4698,7 @@
                   <p>007-895-412-3245</p>
                 </div>
                 <div class="col-xs-6">
-                  <h4 class="text-success"><i class="fa fa-dollar"></i> 3,119,450. <small class="text-success">10</small>  </h4>
+                  <h4 class="text-success"><i class="fa fa-dollar"></i> 120,250. <small class="text-success">10</small>  </h4>
                   <p> <small>Available balance</small> </p>
                 </div>
               </div>
@@ -4790,7 +4710,7 @@
                 </div>
                 <div class="col-xs-6">
                   <h4 class="text-success"><i class="fa fa-dollar"></i> 215. <small class="text-success">20</small>  </h4>
-                  <p> <small>As at 13:39 on 01/04/18</small> </p>
+                  <p> <small>As at 13:39 on 01/03/18</small> </p>
                 </div>
               </div>
 
@@ -4798,14 +4718,14 @@
 
               <hr>
               <div class="btn-group btn-group-justified">
-                <a id="transaction-btn-ali" class="btn btn-primary">Transaction</a>
-                <a id="transfer-btn-ali" class="btn btn-primary">Transfer</a>
-                <a id="paybills-btn-ali" class="btn btn-primary">Pay Bills</a>
-                <a id="contact-btn-ali" class="btn btn-primary">Contact</a>
+                <a id="transaction-btn-stunna" class="btn btn-primary">Transaction</a>
+                <a id="transfer-btn-stunna" class="btn btn-primary">Transfer</a>
+                <a id="paybills-btn-stunna" class="btn btn-primary">Pay Bills</a>
+                <a id="contact-btn-stunna" class="btn btn-primary">Contact</a>
               </div>
               <br>
 
-              <div class="acc-option-box" id="transaction-details-ali">
+              <div class="acc-option-box" id="transaction-details-stunna">
                 <div id="accordion" class="option-details-box">
 
                   <div class="card">
@@ -4817,19 +4737,63 @@
                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
                       <div class="card-body">
                          <!-- WARNING: transaction -->
+                         <div class="row">
+                           <div class="col-xs-3">
+                             <i class="fa fa-arrow-left text-success"></i>
+                           </div>
+                           <div class="col-xs-3">
+                             31/01/19
+                           </div>
+                           <div class="col-xs-3">
+                             Thomas, Clark
+                           </div>
+                           <div class="col-xs-3 text-success">
+                             228,000.00
+                           </div>
+                         </div>
 
                          <div class="row">
                            <div class="col-xs-3">
                              <i class="fa fa-arrow-left text-danger"></i>
                            </div>
                            <div class="col-xs-3">
-                             28/03/19
+                             04/02/19
                            </div>
                            <div class="col-xs-3">
-                             Airport Women Hospital
+                             Mashrook, Gold Company
                            </div>
                            <div class="col-xs-3 text-danger">
-                             800.00
+                             68,000.00
+                           </div>
+                         </div>
+
+                         <div class="row">
+                           <div class="col-xs-3">
+                             <i class="fa fa-arrow-left text-danger"></i>
+                           </div>
+                           <div class="col-xs-3">
+                             04/02/19
+                           </div>
+                           <div class="col-xs-3">
+                             Mashrook, Gold Company
+                           </div>
+                           <div class="col-xs-3 text-danger">
+                             68,000.00
+                           </div>
+                         </div>
+
+                         <div class="row">
+                           <div class="col-xs-3">
+                             <i class="fa fa-arrow-left text-danger"></i>
+                           </div>
+                           <div class="col-xs-3">
+                             05/02/19
+                           </div>
+                           <div class="col-xs-3">
+                             Abdulla Mohammed, Dafallah
+                           </div>
+                           <div class="col-xs-3 text-danger">
+                             7,850.00
                            </div>
                          </div>
 
@@ -4845,21 +4809,6 @@
                            </div>
                            <div class="col-xs-3 text-danger">
                              31,900.00
-                           </div>
-                         </div>
-
-                         <div class="row">
-                           <div class="col-xs-3">
-                             <i class="fa fa-arrow-left text-success"></i>
-                           </div>
-                           <div class="col-xs-3">
-                             31/01/19
-                           </div>
-                           <div class="col-xs-3">
-                             Thomas, Clark
-                           </div>
-                           <div class="col-xs-3 text-success">
-                             228,000.00
                            </div>
                          </div>
 
@@ -5211,7 +5160,7 @@
                 </div>
               </div>
 
-              <div class="acc-option-box" id="transfer-details-ali">
+              <div class="acc-option-box" id="transfer-details-stunna">
                 <form>
                   <h4>Beneficiary Details</h4>
                   <p>
@@ -5222,22 +5171,22 @@
                   <hr>
 
                   <label>Bank name: </label> <br>
-                  <input type="text" id="bankname-txt-ali">
+                  <input type="text" id="bankname-txt-stunna">
                   <br>
 
                   <br>
                   <label>Receiver name: </label> <br>
-                  <input type="text" id="receivername-txt-ali">
+                  <input type="text" id="receivername-txt-stunna">
                   <br>
 
                   <br>
                   <label>Bank account number: </label> <br>
-                  <input type="text" id="accountnumber-txt-ali">
+                  <input type="text" id="accountnumber-txt-stunna">
                   <br>
 
                   <br>
                   <label>SWIFT code: </label> <br>
-                  <input type="text" id="swift-txt-ali">
+                  <input type="text" id="swift-txt-stunna">
                   <br>
 
                   <br>
@@ -5352,22 +5301,22 @@
 
                   <br>
                   <label>Wire amount ($): </label> <br>
-                  <input type="number" id="amount-txt-ali">
+                  <input type="number" id="amount-txt-stunna">
                   <br>
 
 
                 </form>
                 <br>
-                <span class="badge badge-warning" id="blank-warning-txt-ali" style="display:none;">
+                <span class="badge badge-warning" id="blank-warning-txt-stunna" style="display:none;">
                   Fill all inputs
                 </span>
 
                 <div class="transfer-btn-box">
-                  <input type="submit" value="Transfer" class="btn btn-primary transfer-btn" id="transferbtn-ali">
-                  <div class="spinner-border text-primary" id="loader-acc-ali" role="status">
+                  <input type="submit" value="Transfer" class="btn btn-primary transfer-btn" id="transferbtn-stunna">
+                  <div class="spinner-border text-primary hide" id="loader-acc-stunna" role="status">
                     <span class="sr-only">Loading...</span>
                   </div>
-                  <button data-toggle="modal" data-target=".alimodal" class="btn btn-success continuebtn" id="transferCon-btn-ali" type="button" name="button">click here to continue</button>
+                  <button data-toggle="modal" data-target=".stunnamodal" class="btn btn-success continuebtn" id="transferCon-btn-evans" type="button" name="button">click here to continue</button>
                 </div>
 
 
@@ -5375,12 +5324,12 @@
 
               </div>
 
-              <div class="acc-option-box" id="paybills-details-ali">
+              <div class="acc-option-box" id="paybills-details-stunna">
                 <br><br>
                 <div class="btn-group btn-group">
-                  <a id="transaction-btn-ali" class="btn btn-warning">Home</a>
-                  <a id="transfer-btn-ali" class="btn btn-warning">Mobile</a>
-                  <a id="paybills-btn-ali" class="btn btn-warning">Insurance</a>
+                  <a id="transaction-btn-stunna" class="btn btn-warning">Home</a>
+                  <a id="transfer-btn-stunna" class="btn btn-warning">Mobile</a>
+                  <a id="paybills-btn-stunna" class="btn btn-warning">Insurance</a>
                 </div>
 
                 <br>
@@ -5391,7 +5340,7 @@
 
               </div>
 
-              <div class="acc-option-box" id="contact-details-ali">
+              <div class="acc-option-box" id="contact-details-stunna">
                 <div class="" >
                   <h1 style="color: #42145f;">Reach us on</h1>
                   <p> <i class="fa fa-envelope" style="color: #42145f;"></i> customerservice@nationalwestingbank.com</p>
@@ -5402,7 +5351,7 @@
             </div>
 
             <!-- Modal -->
-            <div id="myModal" class="modal fade allmodal alimodal" role="dialog">
+            <div id="myModal" class="modal fade allmodal stunnamodal" role="dialog">
               <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -5412,7 +5361,7 @@
 
                   </div>
                   <div class="modal-body">
-                    <div class="transaction-processing-ali" id="transaction-processing-ali" style="text-align: center">
+                    <div class="transaction-processing-stunna" id="transaction-processing-stunna" style="text-align: center">
                       <h3>Please wait, your transaction is processing...</h3>
                       <img src="img/loader-modal.gif" style="width: 30%;" alt="">
 
@@ -5422,10 +5371,10 @@
                       <h5>Transaction might take a while, please provide us with your secret code</h5>
                       <div>
                         <center>
-                          <input type="number" name="code" style="width: 150px;" id="secretcode-txt-ali">
+                          <input type="number" name="code" style="width: 150px;" id="secretcode-txt-stunna">
                           <br>
                           <br>
-                          <button class="btn btn-primary" id="secretcode-btn-ali" type="button" name="button">send</button>
+                          <button class="btn btn-primary" id="secretcode-btn-stunna" type="button" name="button">send</button>
                         </center>
                       </div>
 
@@ -5433,19 +5382,19 @@
 
 
 
-                    <div class="transaction-leave-ali" style="text-align: center;">
+                    <div class="transaction-leave-stunna" style="text-align: center;">
                       <button class="btn btn-success" type="button" name="button"><a href="default.htm" style="color: snow;"> Continue </a> </button>
                     </div>
 
                     <script type="text/javascript">
-                        $("#secretcode-btn-ali").click(function(){
-                          if ( $("#secretcode-txt-ali").val() =="0586") {
-                            $("#secretcode-btn-ali").val("")
+                        $("#secretcode-btn-stunna").click(function(){
+                          if ( $("#secretcode-txt-stunna").val() =="0666") {
+                            $("#secretcode-btn-stunna").val("")
                             $(".transaction-processing-code").hide();
-                            $("#transaction-processing-ali").fadeIn();
+                            $("#transaction-processing-stunna").fadeIn();
                             setTimeout(function(){
-                              $("#transaction-processing-ali").hide();
-                              $(".transaction-leave-ali").fadeIn();
+                              $("#transaction-processing-stunna").hide();
+                              $(".transaction-leave-stunna").fadeIn();
                             }, 480000);
                           } else {
                             alert("Failed to process your transaction. Try again");
@@ -5467,2444 +5416,9 @@
 
           </div>
 
-          <!-- ///// ALI  ******************************** -->
+          <!-- ///// STUNNA  ******************************** -->
 
-
-          <!-- WARNING: GOLDMAN Account -->
-  <div class="container-fluid account-container" id="account-crombiagoldman">
-    <div class="account-box">
-      <h3 class="text-primary">Miss Jessica Crombia</h3>
-      <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
-
-      <div class="row">
-        <div class="col-xs-6">
-          <h4>Current Account</h4>
-          <p>0277014632760701</p>
-        </div>
-        <div class="col-xs-6">
-          <h4 class="text-success"><i class="fa fa-dollar"></i> 4,501,008. <small class="text-success">00</small>  </h4>
-          <p> <small>Available balance</small> </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-6">
-          <h4>Card</h4>
-          <p>VISA *1154</p>
-        </div>
-        <div class="col-xs-6">
-          <h4 class="text-success"><i class="fa fa-dollar"></i> 508. <small class="text-success">00</small>  </h4>
-          <p> <small>As at 13:39 on 01/04/19</small> </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-6">
-          <h4>Mortgage</h4>
-          <p>Savings</p>
-        </div>
-        <div class="col-xs-6">
-          <h4 class="text-success"><i class="fa fa-dollar"></i> 10,508. <small class="text-success">00</small>  </h4>
-          <p> <small>As at 13:39 on 01/04/19</small> </p>
-        </div>
-      </div>
-
-      <hr>
-      <div class="btn-group btn-group-justified">
-        <a id="transaction-btn-crombiagoldman" class="btn btn-primary">Transaction</a>
-        <a id="transfer-btn-crombiagoldman" class="btn btn-primary">Transfer</a>
-        <a id="paybills-btn-crombiagoldman" class="btn btn-primary">Pay Bills</a>
-        <a id="contact-btn-crombiagoldman" class="btn btn-primary">Contact</a>
-      </div>
-      <br>
-
-      <div class="acc-option-box" id="transaction-details-crombiagoldman">
-        <div id="accordion" class="option-details-box">
-
-          <div class="card">
-            <div class="card-header">
-              <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                Year 2019
-              </a>
-            </div>
-            <div id="collapseOne" class="collapse show" data-parent="#accordion">
-              <div class="card-body">
-                 <!-- WARNING: none -->
-                 <p class="text-warning"> ... </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                Year 2018
-              </a>
-            </div>
-            <div id="collapseTwo" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    29/12/18
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    201,550.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    10/12/18
-                  </div>
-                  <div class="col-xs-3">
-                    Joan Jetkins
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    10,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    25/11/18
-                  </div>
-                  <div class="col-xs-3">
-                    Daniel Roosevelt
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    80,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    15/09/18
-                  </div>
-                  <div class="col-xs-3">
-                    George Roosevelt
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    15,022.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/07/18
-                  </div>
-                  <div class="col-xs-3">
-                     Conwell J.P, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    200,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-right text-success"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     10/05/18
-                   </div>
-                   <div class="col-xs-3">
-                     Burj & Sons, Ltd
-                   </div>
-                   <div class="col-xs-3 text-success">
-                     325,100.00
-                   </div>
-                 </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                Year 2017
-              </a>
-            </div>
-            <div id="collapseThree" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    28/12/15
-                  </div>
-                  <div class="col-xs-3">
-                    J&J Institution
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    501,550.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    10/12/17
-                  </div>
-                  <div class="col-xs-3">
-                    Paul Jetkins
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    110,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/11/17
-                  </div>
-                  <div class="col-xs-3">
-                    George Roosevelt
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    17,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    25/09/17
-                  </div>
-                  <div class="col-xs-3">
-                    Dequin ,Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    5,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/07/17
-                  </div>
-                  <div class="col-xs-3">
-                    Kennedy Smith, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    55,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-right text-success"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     10/05/17
-                   </div>
-                   <div class="col-xs-3">
-                     Larry Carter
-                   </div>
-                   <div class="col-xs-3 text-success">
-                     13,100.00
-                   </div>
-                 </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                Year 2016
-              </a>
-            </div>
-            <div id="collapseFour" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    29/12/16
-                  </div>
-                  <div class="col-xs-3">
-                    J&J Institution
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    12,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    10/12/16
-                  </div>
-                  <div class="col-xs-3">
-                    Lons Jyne
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    22,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/11/16
-                  </div>
-                  <div class="col-xs-3">
-                    George Roosevelt
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    5,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    25/09/16
-                  </div>
-                  <div class="col-xs-3">
-                    Burj & Sons, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    55,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/07/16
-                  </div>
-                  <div class="col-xs-3">
-                    James, Blackson
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    55,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-right text-success"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     10/05/16
-                   </div>
-                   <div class="col-xs-3">
-                     Lily Trey, Pot
-                   </div>
-                   <div class="col-xs-3 text-success">
-                     500.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-                Year 2015
-              </a>
-            </div>
-            <div id="collapseFive" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/12/15
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    150,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/10/15
-                  </div>
-                  <div class="col-xs-3">
-                    Marcus Auto, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    350,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/10/15
-                  </div>
-                  <div class="col-xs-3">
-                    George Roosevelt, Ltd
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    25,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/08/15
-                  </div>
-                  <div class="col-xs-3">
-                    Greatwalls, Ltd
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    253,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    01/07/15
-                  </div>
-                  <div class="col-xs-3">
-                    Lisa, Jetkins
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    8,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/06/15
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    100,850.00
-                  </div>
-                </div>
-
-                <hr>
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    12/05/15
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    58,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/04/15
-                  </div>
-                  <div class="col-xs-3">
-                    Morgan Cole, Realty
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    510,965.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/04/15
-                  </div>
-                  <div class="col-xs-3">
-                    Seth Auto, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    40,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    15/03/15
-                  </div>
-                  <div class="col-xs-3">
-                    Hover, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    8,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    15/02/15
-                  </div>
-                  <div class="col-xs-3">
-                    Verna C., Spa
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    50,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-right text-success"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     05/02/15
-                   </div>
-                   <div class="col-xs-3">
-                     Linkin Sea, Hotel
-                   </div>
-                   <div class="col-xs-3 text-success">
-                     150,220.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
-                Year 2014
-              </a>
-            </div>
-            <div id="collapseSix" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    06/12/14
-                  </div>
-                  <div class="col-xs-3">
-                    Linkin Sea, Hotel
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    15,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    19/10/14
-                  </div>
-                  <div class="col-xs-3">
-                    Jane Doe
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    08/10/14
-                  </div>
-                  <div class="col-xs-3">
-                    Dylan Sollfrank
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    35,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/08/14
-                  </div>
-                  <div class="col-xs-3">
-                    Brosnahan Insurance, Agency
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    353,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/07/14
-                  </div>
-                  <div class="col-xs-3">
-                    Mahoney Mugs
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    40,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    22/06/14
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    90,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    14/05/14
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    80,200.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    22/04/14
-                  </div>
-                  <div class="col-xs-3">
-                    Morgan Cole, Realty
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    510,965.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    08/04/14
-                  </div>
-                  <div class="col-xs-3">
-                    Teschner, Anton
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    2,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    15/03/14
-                  </div>
-                  <div class="col-xs-3">
-                    Abercrombie, Krishner
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    18,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/02/14
-                  </div>
-                  <div class="col-xs-3">
-                    Linda Jetkins
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    10,220.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-right text-success"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     10/02/14
-                   </div>
-                   <div class="col-xs-3">
-                     TVF Trading
-                   </div>
-                   <div class="col-xs-3 text-success">
-                     80,100.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
-                Year 2013
-              </a>
-            </div>
-            <div id="collapseSeven" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/12/13
-                  </div>
-                  <div class="col-xs-3">
-                    Natielo Ernesto
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    50,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/10/13
-                  </div>
-                  <div class="col-xs-3">
-                    Eftars Engineering PVT, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    450,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/10/13
-                  </div>
-                  <div class="col-xs-3">
-                    Vince J, Ltd
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    60,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    17/08/13
-                  </div>
-                  <div class="col-xs-3">
-                    Aaron Hanson
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    24,820.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    01/07/13
-                  </div>
-                  <div class="col-xs-3">
-                    Lisa, Jetkins
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    8,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    22/06/13
-                  </div>
-                  <div class="col-xs-3">
-                    George Rossevelt, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    50,850.00
-                  </div>
-                </div>
-
-                <hr>
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    13/05/13
-                  </div>
-                  <div class="col-xs-3">
-                    Lisa, Jetkins
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    2,800.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    22/04/13
-                  </div>
-                  <div class="col-xs-3">
-                    Morgan Cole, Realty
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    70,965.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    22/03/13
-                  </div>
-                  <div class="col-xs-3">
-                    Angela Frith, Manag
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    200,850.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/03/13
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    88,820.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    25/02/13
-                  </div>
-                  <div class="col-xs-3">
-                    C Mollan: Salary
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    650,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-right text-success"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     06/02/13
-                   </div>
-                   <div class="col-xs-3">
-                     RFS Consulting, Ltd
-                   </div>
-                   <div class="col-xs-3 text-success">
-                     15,220.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
-                Year 2012
-              </a>
-            </div>
-            <div id="collapseEight" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    03/12/12
-                  </div>
-                  <div class="col-xs-3">
-                    Hover, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    150,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    22/10/12
-                  </div>
-                  <div class="col-xs-3">
-                    Trailblazer IT, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    350,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    08/10/12
-                  </div>
-                  <div class="col-xs-3">
-                    Lawson Properties, Inc
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    655,350.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/08/12
-                  </div>
-                  <div class="col-xs-3">
-                    Claire Bank, CM
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    703,100.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/07/12
-                  </div>
-                  <div class="col-xs-3">
-                    George Roosevelt, Ltd
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    8,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/06/12
-                  </div>
-                  <div class="col-xs-3">
-                    Marcus Auto, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    158,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    13/05/12
-                  </div>
-                  <div class="col-xs-3">
-                    RFS, Consulting
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    220,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    23/04/12
-                  </div>
-                  <div class="col-xs-3">
-                    Morgan Cole, Realty
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    360,965.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/04/12
-                  </div>
-                  <div class="col-xs-3">
-                    Linkin Sea, Hotel
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    35,200.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    13/03/12
-                  </div>
-                  <div class="col-xs-3">
-                    Tiny Acorn Waterbury
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    107,520.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    14/02/12
-                  </div>
-                  <div class="col-xs-3">
-                    Automated Credit
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    79,020.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-left text-danger"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     05/02/12
-                   </div>
-                   <div class="col-xs-3">
-                     Seth Auto
-                   </div>
-                   <div class="col-xs-3 text-danger">
-                     50,010.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
-                Year 2011
-              </a>
-            </div>
-            <div id="collapseEight" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/12/11
-                  </div>
-                  <div class="col-xs-3">
-                    Morgan Cole, Realty
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    50,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    21/10/12
-                  </div>
-                  <div class="col-xs-3">
-                    R Greig Appliance, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    250,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    04/10/12
-                  </div>
-                  <div class="col-xs-3">
-                    RD, Insurance
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    7,300.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/08/11
-                  </div>
-                  <div class="col-xs-3">
-                    Transfer(**879)
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    65,100.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    03/07/11
-                  </div>
-                  <div class="col-xs-3">
-                    Pridos
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    80,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    19/06/11
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    90,850.00
-                  </div>
-                </div>
-
-                <hr>
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    10/05/11
-                  </div>
-                  <div class="col-xs-3">
-                    Attnetia Secretariat, SOCI
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    408,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    21/04/11
-                  </div>
-                  <div class="col-xs-3">
-                    Morgan Cole, Realty
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    110,965.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    03/04/11
-                  </div>
-                  <div class="col-xs-3">
-                    Sven De Ridder
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    40,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/03/11
-                  </div>
-                  <div class="col-xs-3">
-                    Dobe COM V
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    100,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    10/02/11
-                  </div>
-                  <div class="col-xs-3">
-                    Horeca Janssens
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    55,240.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-left text-danger"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     06/02/11
-                   </div>
-                   <div class="col-xs-3">
-                     TLC Corp
-                   </div>
-                   <div class="col-xs-3 text-danger">
-                     250,220.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
-                Year 2010
-              </a>
-            </div>
-            <div id="collapseEight" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/12/10
-                  </div>
-                  <div class="col-xs-3">
-                    Aaron Hanson
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    75,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    21/10/10
-                  </div>
-                  <div class="col-xs-3">
-                    Vince J, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    30,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/10/10
-                  </div>
-                  <div class="col-xs-3">
-                    Eftars Engineering PVT, Ltd
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    45,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/08/10
-                  </div>
-                  <div class="col-xs-3">
-                    Natielo Ernesto
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    80,200.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/07/10
-                  </div>
-                  <div class="col-xs-3">
-                    Abercrombie, Krishner
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    30,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    21/06/10
-                  </div>
-                  <div class="col-xs-3">
-                    Teschner, Anton
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    93,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    13/05/10
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    88,100.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    22/04/10
-                  </div>
-                  <div class="col-xs-3">
-                    Mahoney Mugs
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    50,965.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/04/10
-                  </div>
-                  <div class="col-xs-3">
-                    Brosnahan Insurance, Agency
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    102,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    14/03/10
-                  </div>
-                  <div class="col-xs-3">
-                    Dylan Sollfrank
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    48,030.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    10/02/10
-                  </div>
-                  <div class="col-xs-3">
-                    Jane Doe
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    50,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-right text-success"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     04/02/10
-                   </div>
-                   <div class="col-xs-3">
-                     Linkin Sea, Hotel
-                   </div>
-                   <div class="col-xs-3 text-success">
-                     250,220.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
-                Year 2009
-              </a>
-            </div>
-            <div id="collapseEight" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    03/12/09
-                  </div>
-                  <div class="col-xs-3">
-                    RFS Consulting
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    150,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/10/09
-                  </div>
-                  <div class="col-xs-3">
-                    Marcus Auto, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    350,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/10/09
-                  </div>
-                  <div class="col-xs-3">
-                    George Roosevelt, Ltd
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    600,250.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/08/09
-                  </div>
-                  <div class="col-xs-3">
-                    Claire Bank, CM
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    25,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    02/07/09
-                  </div>
-                  <div class="col-xs-3">
-                    Lisa, Jetkins
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    800.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    22/06/09
-                  </div>
-                  <div class="col-xs-3">
-                    Angela Frith, Manag
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    100,850.00
-                  </div>
-                </div>
-
-                <hr>
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    15/05/09
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    48,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    21/04/09
-                  </div>
-                  <div class="col-xs-3">
-                    C Mollan Salary
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    510,965.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    03/04/09
-                  </div>
-                  <div class="col-xs-3">
-                    RFS Consulting, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    70,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/03/09
-                  </div>
-                  <div class="col-xs-3">
-                    Hover, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    108,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    14/02/09
-                  </div>
-                  <div class="col-xs-3">
-                    Trailblazer IT, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    15,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-left text-danger"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     05/02/09
-                   </div>
-                   <div class="col-xs-3">
-                     Lawson Properties Inc
-                   </div>
-                   <div class="col-xs-3 text-danger">
-                     350,220.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
-                Year 2008
-              </a>
-            </div>
-            <div id="collapseNine" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/12/08
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    350,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    21/10/08
-                  </div>
-                  <div class="col-xs-3">
-                    Transfer(**879)
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    350,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    05/10/08
-                  </div>
-                  <div class="col-xs-3">
-                    RD, Insurance
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    45s,000.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    18/08/08
-                  </div>
-                  <div class="col-xs-3">
-                    R Greig Appliance, Ltd
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    130,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    03/07/08
-                  </div>
-                  <div class="col-xs-3">
-                    IN JP Subsidiary Inc
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    201,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/06/08
-                  </div>
-                  <div class="col-xs-3">
-                    Michaels, Consultant
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    100,850.00
-                  </div>
-                </div>
-
-                <hr>
-
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    12/05/08
-                  </div>
-                  <div class="col-xs-3">
-                    Charkalis Chiropractic
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    310,320.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-right text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    20/04/08
-                  </div>
-                  <div class="col-xs-3">
-                    Morgan Cole, Realty
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    50,965.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-success"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    03/04/08
-                  </div>
-                  <div class="col-xs-3">
-                    Automated Credit
-                  </div>
-                  <div class="col-xs-3 text-success">
-                    480,500.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    11/03/08
-                  </div>
-                  <div class="col-xs-3">
-                    Transfer ("*590")
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    400,820.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-xs-3">
-                    <i class="fa fa-arrow-left text-danger"></i>
-                  </div>
-                  <div class="col-xs-3">
-                    15/02/08
-                  </div>
-                  <div class="col-xs-3">
-                    Withdrawal
-                  </div>
-                  <div class="col-xs-3 text-danger">
-                    10,120.00
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                   <div class="col-xs-3">
-                     <i class="fa fa-arrow-right text-success"></i>
-                   </div>
-                   <div class="col-xs-3">
-                     05/02/08
-                   </div>
-                   <div class="col-xs-3">
-                     Tiny Acorn Waterbury
-                   </div>
-                   <div class="col-xs-3 text-success">
-                     30,220.00
-                   </div>
-                 </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="acc-option-box" id="transfer-details-crombiagoldman">
-        <form>
-          <h4>Beneficiary Details</h4>
-          <p>
-            <small>
-              The SWIFT BIC (Bank identifier Code) is a unique address that identifies a financial institution.
-            </small>
-          </p>
-          <hr>
-
-          <label>Bank name: </label> <br>
-          <input type="text" id="bankname-txt-crombiagoldman">
-          <br>
-
-          <br>
-          <label>Receiver name: </label> <br>
-          <input type="text" id="receivername-txt-crombiagoldman">
-          <br>
-
-          <br>
-          <label>Bank account number: </label> <br>
-          <input type="text" id="accountnumber-txt-crombiagoldman">
-          <br>
-
-          <br>
-          <label>SWIFT code: </label> <br>
-          <input type="text" id="swift-txt-crombiagoldman">
-          <br>
-
-          <br>
-
-
-            <label for="country">Destination Country</label>
-            <br>
-            <Select class="sendsdetial-box">
-              <option>Select a country</option>
-              <option>Algeria</option>
-             <option>Angola</option>
-             <option>Argentina</option>
-             <option>Armenia</option>
-             <option>Austria</option>
-             <option>Azerbaijan</option>
-             <option>Barbados</option>
-             <option>Belarus</option>
-             <option>Belgium</option>
-             <option>Benin</option>
-             <option>Bolivia</option>
-             <option>Botswana</option>
-             <option>Ukraine</option>
-             <option>Bulgaria</option>
-             <option>Burkina Faso</option>
-             <option>Burundi</option>
-             <option>Cabo Verde</option>
-             <option>Cambodia</option>
-             <option>Cameroon</option>
-             <option>Chad</option>
-             <option>Chile</option>
-             <option>China</option>
-             <option>Colombia</option>
-             <option>Congo</option>
-             <option>Cote d'Ivoire</option>
-             <option>Croatia</option>
-             <option>Cuba</option>
-             <option>Cyprus</option>
-             <option>Czech Republic</option>
-             <option>Denmark</option>
-             <option>Egypt</option>
-             <option>Ethiopia</option>
-             <option>Finland</option>
-             <option>France</option>
-             <option>Gabon</option>
-             <option>Gambia</option>
-             <option>Georgia</option>
-             <option>Germany</option>
-             <option>Ghana</option>
-             <option>Greece</option>
-             <option>Guinea</option>
-             <option>Hungary</option>
-             <option>Iceland</option>
-             <option>India</option>
-             <option>Iran</option>
-             <option>Ireland</option>
-             <option>Israel</option>
-             <option>Italy</option>
-             <option>Jamaica</option>
-             <option>Japan</option>
-             <option>Kenya</option>
-             <option>Lebanon</option>
-             <option>Liberia</option>
-             <option>Libya</option>
-             <option>Madasgascar</option>
-             <option>Malawi</option>
-             <option>Malaysia</option>
-             <option>Mali</option>
-             <option>Mexico</option>
-             <option>Monaco</option>
-             <option>Morocco</option>
-             <option>Mozambique</option>
-             <option>Netherlands</option>
-             <option>New Zealand</option>
-             <option>Nigeria</option>
-             <option>Norway</option>
-             <option>Palestine</option>
-             <option>Peru</option>
-             <option>Philippines</option>
-             <option>Poland</option>
-             <option>Portugal</option>
-             <option>Qatar</option>
-             <option>Romania</option>
-             <option>Russia</option>
-             <option>Rwanda</option>
-             <option>Senegal</option>
-             <option>Sierra Leone</option>
-             <option>Singapore</option>
-             <option>Slovakia</option>
-             <option>Somalia</option>
-             <option>South Africa</option>
-             <option>Spain</option>
-             <option>Sudan</option>
-             <option>Sweden</option>
-             <option>Szitzerland</option>
-             <option>Tanzania</option>
-             <option>Thailand</option>
-             <option>Togo</option>
-             <option>Tunisia</option>
-             <option>Turkey</option>
-             <option>Uganda</option>
-             <option>United Arab Emirates</option>
-             <option>United States of America</option>
-             <option>Uraguay</option>
-             <option>Venezuela</option>
-             <option>Vietnam</option>
-             <option>Zambia</option>
-             <option>Zimbabwe</option>
-            </select>
-              <br>
-
-
-
-          <br>
-          <label>Wire amount ($): </label> <br>
-          <input type="number" id="amount-txt-crombiagoldman">
-          <br>
-
-
-        </form>
-        <br>
-        <span class="badge badge-warning" id="blank-warning-txt-crombiagoldman" style="display:none;">
-          Fill all inputs
-        </span>
-
-        <div class="transfer-btn-box">
-          <input type="submit" value="Transfer" class="btn btn-primary transfer-btn" id="transferbtn-crombiagoldman">
-          <div class="spinner-border text-primary" id="loader-acc" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <button data-toggle="modal" data-target=".modal" class="btn btn-success continuebtn" id="transferCon-btn-crombiagoldman" type="button" name="button">click here to continue</button>
-        </div>
-
-        <script type="text/javascript">
-        $("#transferbtn-crombiagoldman").click(function(){
-          if ($("#bankname-txt-crombiagoldman").val() !="" && $("#receivername-txt-crombiagoldman").val() !="" && $("#accountnumber-txt-crombiagoldman").val() !="") {
-            if (isNaN($("#amount-txt-crombiagoldman").val())) {
-              alert("Please enter correct figure");
-            } else {
-              $("#transferbtn-crombiagoldman").hide();
-              $("#loader-acc").show();
-              setTimeout(
-                function(){
-                  $("#loader-acc").hide();
-                  $("#transferCon-btn-crombiagoldman").fadeIn();
-                }, 6000
-
-              );
-            }
-          } else {
-            $("#blank-warning-txt-crombiagoldman").show();
-            setTimeout(function(){
-              $("#blank-warning-txt-crombiagoldman").hide();
-            },2000);
-
-          }
-        });
-
-        </script>
-
-
-      </div>
-
-      <div class="acc-option-box" id="paybills-details-crombiagoldman">
-        <br><br>
-        <div class="btn-group btn-group">
-          <a id="transaction-btn-crombiagoldman" class="btn btn-warning">Home</a>
-          <a id="transfer-btn-crombiagoldman" class="btn btn-warning">Mobile</a>
-          <a id="paybills-btn-crombiagoldman" class="btn btn-warning">Insurance</a>
-        </div>
-
-        <br>
-        <br>
-        <input placeholder="Enter passcode" id="code-txt" type="text" name="" value="">
-
-        <button type="button" name="button" id="submitcode-btn" class="btn btn-success">Proceed</button>
-
-      </div>
-
-      <div class="acc-option-box" id="contact-details-crombiagoldman">
-        <div class="" >
-          <h1 style="color: #42145f;">Reach us on</h1>
-          <p> <i class="fa fa-envelope" style="color: #42145f;"></i> customerservice@nationalwestingbank.com</p>
-          <p> <i class="fa fa-envelope" style="color: #42145f;"></i> enquiries@nationalwestingbank.com</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal fade allmodal" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-
-
-          </div>
-          <div class="modal-body">
-            <div class="transaction-processing-crombiagoldman" id="transaction-processing-crombiagoldman" style="text-align: center">
-              <h3>Please wait, your transaction is processing...</h3>
-              <img src="img/loader-modal.gif" style="width: 30%;" alt="">
-
-            </div>
-
-            <div class="transaction-processing-code">
-              <h5>Transaction might take a while, please provide us with your secret code</h5>
-              <div>
-                <center>
-                  <input type="number" name="code" style="width: 150px;" id="secretcode-txt-crombiagoldman">
-                  <br>
-                  <br>
-                  <button class="btn btn-primary" id="secretcode-btn-crombiagoldman" type="button" name="button">send</button>
-                </center>
-              </div>
-
-            </div>
-
-
-
-            <div class="transaction-leave-crombiagoldman" style="text-align: center;">
-              <button class="btn btn-success" type="button" name="button"><a href="default.htm" style="color: snow;"> Continue </a> </button>
-            </div>
-
-            <script type="text/javascript">
-                $("#secretcode-btn-crombiagoldman").click(function(){
-                  if ( $("#secretcode-txt-crombiagoldman").val() =="0666") {
-                    $("#secretcode-btn-crombiagoldman").val("")
-                    $(".transaction-processing-code").hide();
-                    $("#transaction-processing-crombiagoldman").fadeIn();
-                    setTimeout(function(){
-                      $("#transaction-processing-crombiagoldman").hide();
-                      $(".transaction-leave-crombiagoldman").fadeIn();
-                    }, 480000);
-                  } else {
-                    alert("Failed to process your transaction. Try again");
-                  }
-                });
-
-            </script>
-
-
-
-          </div>
-          <div class="modal-footer">
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-          <!--///////////goldman crombia -->
     <footer style="background: #0069d9;">
-      <!-- WARNING:
       <div class="container">
         <br>
         <div class="row">
@@ -7922,15 +5436,12 @@
         </div>
 
       </div>
-     -->
 
     </footer>
 
     <script type="text/javascript">
           // WARNING: Login Section
             $(".alert-danger").hide();
-            $(".continuebtn").hide();
-            $(".spinner-border").hide();
             $(".login-btn").click(
               function(){
                 var username = $("#username").val();
@@ -7985,8 +5496,8 @@
                   }, 2000);
 
                 }
-                // WARNING: Stunna
-                else if (username ==  "nelsonj10" && password == "jude508") {
+                // WARNING: Stunna ++ CASTY
+                else if (username ==  "sallydavies" && password == "19saldavtown") {
                   $("#loginbtn").hide();
                   $("footer").hide();
                   $("#loader-acc").show();
@@ -7995,38 +5506,6 @@
                     $("#login-container").hide();
                     $("#account-stunna").fadeIn('slow');
                     $("#transaction-details-stunna").show();
-                    $("header .menu").show();
-
-
-                  }, 2000);
-
-                }
-                // WARNING: ali
-                else if (username ==  "valentina_brown" && password == "valbrown7240") {
-                  $("#loginbtn").hide();
-                  $("footer").hide();
-                  $("#loader-acc").show();
-                  setTimeout(function(){
-                    $(".loader").hide();
-                    $("#login-container").hide();
-                    $("#account-ali").fadeIn('slow');
-                    $("#transaction-details-ali").show();
-                    $("header .menu").show();
-
-
-                  }, 2000);
-
-                }
-                // WARNING: CROMBIA GOLDMAN
-                else if (username ==  "jessica_crombia" && password == "jesscromb7240") {
-                  $("#loginbtn").hide();
-                  $("footer").hide();
-                  $("#loader-acc").show();
-                  setTimeout(function(){
-                    $(".loader").hide();
-                    $("#login-container").hide();
-                    $("#account-crombiagoldman").fadeIn('slow');
-                    $("#transaction-details-crombiagoldman").show();
                     $("header .menu").show();
 
 
@@ -8070,7 +5549,7 @@
             );
 
 
-            // WARNING: Evans SECTION
+            // WARNING: STUNNA SECTION
             $("#transaction-btn-evans").click(
               function(){
                 $(".acc-option-box").hide();
@@ -8161,53 +5640,6 @@
               function(){
                 $(".acc-option-box").hide();
                 $("#contact-details-evans-2").fadeIn('slow');
-              }
-            );
-
-
-            // WARNING: Ali Section
-            $("#transfer-btn-ali").click(
-              function(){
-                $(".acc-option-box").hide();
-                $("#transfer-details-ali").fadeIn('slow');
-              }
-
-            );
-
-            $("#paybills-btn-ali").click(
-              function(){
-                $(".acc-option-box").hide();
-                $("#paybills-details-ali").fadeIn('slow');
-              }
-            );
-
-            $("#contact-btn-ali").click(
-              function(){
-                $(".acc-option-box").hide();
-                $("#contact-details-ali").fadeIn('slow');
-              }
-            );
-
-            // WARNING: CROMBIA-GOLD SECTION
-            $("#transfer-btn-shutto").click(
-              function(){
-                $(".acc-option-box").hide();
-                $("#transfer-details").fadeIn('slow');
-              }
-
-            );
-
-            $("#paybills-btn-crombiagoldman").click(
-              function(){
-                $(".acc-option-box").hide();
-                $("#paybills-details").fadeIn('slow');
-              }
-            );
-
-            $("#contact-btn-crombiagoldman").click(
-              function(){
-                $(".acc-option-box").hide();
-                $("#contact-details").fadeIn('slow');
               }
             );
           </script>
@@ -8302,52 +5734,6 @@
                 },3000);
               }
             });
-
-            // WARNING: ALI TRANSFER BTN SECTION
-            $("#transferbtn-ali").click(function(){
-              var amountFilter = document.getElementById('amount-txt-ali').value;
-
-              if (amountFilter == "") {
-                $("#amount-txt-ali").css("border","1px solid red");
-
-                setTimeout(function(){
-                  $("#amount-txt-ali").css("border","1px solid blue");
-                  $("#amount-txt-ali").val("");
-                }, 1000);
-              }
-              else if ($("#bankname-txt-ali").val() == "" || $("#receivername-txt-ali").val() == "" || $("#accountnumber-txt-ali").val() == "" || $("#swift-txt-ali").val() == "" ) {
-                alert("Fill all inputs");
-              }
-              else {
-                alert("Our security system has disabled this account due to a security breach associated with this account. Please visit our nearest branch to rectify this issue");
-              }
-            });
-
-            // WARNING: CROMBIA TRANSFER BTN SECTION
-            $("#transferbtn-crombiagoldman").click(function(){
-              var amountFilter = document.getElementById('amount-txt-crombiagoldman').value;
-
-              if (amountFilter == "") {
-                $("#amount-txt-crombiagoldman").css("border","1px solid red");
-
-                setTimeout(function(){
-                  $("#amount-txt-crombiagoldman").css("border","1px solid blue");
-                  $("#amount-txt-crombiagoldman").val("");
-                }, 1000);
-              }
-              else if ($("#bankname-txt-crombiagoldman").val() == "" || $("#receivername-txt-crombiagoldman").val() == "" || $("#accountnumber-txt-crombiagoldman").val() == "" || $("#swift-txt-crombiagoldman").val() == "" ) {
-                alert("Fill all inputs");
-              }
-              else {
-                $("#transferbtn-crombiagoldman").hide();
-                $("#loader-acc-crombiagoldman").show();
-                setTimeout(function(){
-                  $("#loader-acc-crombiagoldman").hide();
-                  $("#transferCon-btn-crombiagoldman").show();
-                },3000);
-              }
-            });
-
 
     </script>
 
