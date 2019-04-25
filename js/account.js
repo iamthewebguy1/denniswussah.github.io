@@ -15,6 +15,7 @@ $(".transaction-leave-evans-2").hide();
   // WARNING: Stunna
 $("#transaction-processing-stunna").hide();
 $(".transaction-leave-stunna").hide();
+$("#transferCon-btn-stunna").hide();
 // WARNING: ali
 $("#transaction-processing-ali").hide();
 $(".transaction-leave-ali").hide();
