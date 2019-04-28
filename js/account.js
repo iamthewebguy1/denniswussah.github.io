@@ -6,9 +6,13 @@ $("#account-top").hide();
   // WARNING: shutto
 $("#transaction-processing-shutto").hide();
 $(".transaction-leave-shutto").hide();
+$("#transferCon-btn-shutto").hide();
+
   // WARNING: Evans
 $("#transaction-processing-evans").hide();
 $(".transaction-leave-evans").hide();
+$("#transferCon-btn-evans").hide();
+
 // WARNING: Evans-2
 $("#transaction-processing-evans-2").hide();
 $(".transaction-leave-evans-2").hide();
@@ -23,7 +27,10 @@ $(".transaction-leave-ali").hide();
 $("#transaction-processing-crombiagoldman").hide();
 $(".transaction-leave-crombiagoldman").hide();
 
-
+// WARNING: Dallas
+$("#transaction-processing-dallas").hide();
+$(".transaction-leave-dallas").hide();
+$("#transferCon-btn-dallas").hide();
 
 $("#submitcode-btn").click(
   function(){
