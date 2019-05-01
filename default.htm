@@ -85,7 +85,7 @@
             <div class="container-fluid account-container" id="account-shutto">
               <div class="account-box">
                 <h3 class="text-primary">Mr Michael Myers</h3>
-                <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
+                  <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
 
                 <div class="row">
                   <div class="col-xs-6">
@@ -146,10 +146,10 @@
                                <i class="fa fa-arrow-left text-danger"></i>
                              </div>
                              <div class="col-xs-3">
-                               03/04/19
+                               03/24/19
                              </div>
                              <div class="col-xs-3">
-                               ENT, C.U
+                               Hover Estate, Ltd
                              </div>
                              <div class="col-xs-3 text-danger">
                                15,000.00
@@ -164,7 +164,7 @@
                                03/04/19
                              </div>
                              <div class="col-xs-3">
-                               ENT, C.U
+                               J&J Auto Service
                              </div>
                              <div class="col-xs-3 text-danger">
                                23,800.00
@@ -2427,7 +2427,13 @@
                       if (isNaN($("#amount-txt-shutto").val())) {
                         alert("Please enter correct figure");
                       } else {
-                        alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch.")
+                        // WARNING: SECURITY LOCK CONTROL PRANK''
+                        $("#transferbtn-shutto  ").hide();
+                        $("#loader-acc-shutto").show();
+                        setTimeout(function(){
+                          $("#loader-acc-shutto").hide();
+                          $("#transferCon-btn-shutto").show();
+                        },3000);
                       }
                     } else {
                       $("#blank-warning-txt-shutto").show();
@@ -2447,7 +2453,7 @@
                   <br><br>
                   <div class="btn-group btn-group">
                     <a id="transaction-btn-shutto" class="btn btn-warning">Home</a>
-                    <a id="transfer-btn-shutto" class="btn btn-warning">Mobile</a>
+                    <a id="transfer-btn-" class="btn btn-warning">Mobile</a>
                     <a id="paybills-btn-shutto" class="btn btn-warning">Insurance</a>
                   </div>
 
@@ -6233,7 +6239,15 @@
 
 
             // WARNING: SHUTTO SECTION
-            $("#transfer-btn-shutto").click(
+            $("#transaction-btn-shutto").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#transaction-details").fadeIn('slow');
+              }
+
+            );
+
+            $("#transfer-btn-shutto ").click(
               function(){
                 $(".acc-option-box").hide();
                 $("#transfer-details").fadeIn('slow');
