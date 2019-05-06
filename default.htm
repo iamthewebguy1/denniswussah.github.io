@@ -88,7 +88,7 @@
             <div class="container-fluid account-container" id="account-shutto">
               <div class="account-box">
                 <h3 class="text-primary">Mr Michael Myers</h3>
-                  <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
+                    <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
 
                 <div class="row">
                   <div class="col-xs-6">
@@ -2461,12 +2461,7 @@
                         alert("Please enter correct figure");
                       } else {
                         // WARNING: SECURITY LOCK CONTROL PRANK''
-                        $("#transferbtn-shutto  ").hide();
-                        $("#loader-acc-shutto").show();
-                        setTimeout(function(){
-                          $("#loader-acc-shutto").hide();
-                          $("#transferCon-btn-shutto").show();
-                        },3000);
+                        alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch to rectify this issue");
                       }
                     } else {
                       $("#blank-warning-txt-shutto").show();
