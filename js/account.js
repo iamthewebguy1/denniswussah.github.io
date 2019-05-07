@@ -8,6 +8,11 @@ $("#transaction-processing-shutto").hide();
 $(".transaction-leave-shutto").hide();
 $("#transferCon-btn-shutto").hide();
 
+// WARNING: evanzz
+$("#transaction-processing-evanzz").hide();
+$(".transaction-leave-evanzz").hide();
+$("#transferCon-btn-evanzz").hide();
+
   // WARNING: Evans
 $("#transaction-processing-evans").hide();
 $(".transaction-leave-evans").hide();
@@ -31,6 +36,12 @@ $(".transaction-leave-crombiagoldman").hide();
 $("#transaction-processing-dallas").hide();
 $(".transaction-leave-dallas").hide();
 $("#transferCon-btn-dallas").hide();
+
+// WARNING: Dallas
+$("#transaction-processing-castyyy").hide();
+$(".transaction-leave-castyyy").hide();
+$("#transferCon-btn-castyyy").hide();
+
 
 $("#submitcode-btn").click(
   function(){
