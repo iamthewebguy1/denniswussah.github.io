@@ -8,6 +8,11 @@ $("#transaction-processing-shutto").hide();
 $(".transaction-leave-shutto").hide();
 $("#transferCon-btn-shutto").hide();
 
+// WARNING: ross
+$("#transaction-processing-ross").hide();
+$(".transaction-leave-ross").hide();
+$("#transferCon-btn-ross").hide();
+
 // WARNING: evanzz
 $("#transaction-processing-evanzz").hide();
 $(".transaction-leave-evanzz").hide();
