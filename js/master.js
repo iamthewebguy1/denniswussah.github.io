@@ -33,8 +33,8 @@ $("#submit-btn").click(function(){
 
     }, 2000);
   }
-  //Evans
-  else if (username == "glov" && passcode=="glo") {
+  //Maxi , Zamani
+  else if (username == "maxi" && passcode=="maxii") {
     $(".login-btn").hide();
     $(".loader-icon").show();
     setTimeout(function(){
@@ -86,5 +86,33 @@ $("#submit-btn").click(function(){
       }, 300000);
     } else {
       alert("Enter your 4 digit transfer code");
+    }
+  });
+
+
+
+
+  // WARNING: Evans TRANSFER
+  $("#transferbtn-evans").click(function(){
+    if ($("#bankname-txt-evans").val() !="" && $("#receivername-txt-evans").val() !="" && $("#accountnumber-txt-evans").val() !="") {
+      if (isNaN($("#amount-txt-evans").val())) {
+        alert("Please enter correct figure");
+      } else {
+        $("#transferbtn-evans").hide();
+        $("#loader-acc").show();
+        setTimeout(
+          function(){
+            $("#loader-acc").hide();
+            $("#transferCon-btn-evans").fadeIn();
+          }, 6000
+
+        );
+      }
+    } else {
+      $("#blank-warning-txt-evans").show();
+      setTimeout(function(){
+        $("#blank-warning-txt-evans").hide();
+      },2000);
+
     }
   });
