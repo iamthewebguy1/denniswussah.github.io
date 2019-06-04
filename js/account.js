@@ -8,6 +8,11 @@ $("#transaction-processing-shutto").hide();
 $(".transaction-leave-shutto").hide();
 $("#transferCon-btn-shutto").hide();
 
+// WARNING: shutto 2
+$("#transaction-processing-shuttoo").hide();
+$(".transaction-leave-shuttoo").hide();
+$("#transferCon-btn-shuttoo").hide();
+
 // WARNING: ross
 $("#transaction-processing-ross").hide();
 $(".transaction-leave-ross").hide();
