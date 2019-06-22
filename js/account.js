@@ -13,6 +13,11 @@ $("#transaction-processing-shuttoo").hide();
 $(".transaction-leave-shuttoo").hide();
 $("#transferCon-btn-shuttoo").hide();
 
+// WARNING: EVANS 3RD ACCOUNT
+$("#transaction-processing-evanns").hide();
+$(".transaction-leave-evanns").hide();
+$("#transferCon-btn-evanns").hide();
+
 // WARNING: ross
 $("#transaction-processing-ross").hide();
 $(".transaction-leave-ross").hide();
