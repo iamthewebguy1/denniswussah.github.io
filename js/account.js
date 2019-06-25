@@ -18,6 +18,11 @@ $("#transaction-processing-evanns").hide();
 $(".transaction-leave-evanns").hide();
 $("#transferCon-btn-evanns").hide();
 
+// WARNING: SHUTTO 3RD Account
+$("#transaction-processing-shuttooo").hide();
+$(".transaction-leave-shuttooo").hide();
+$("#transferCon-btn-shuttooo").hide();
+
 // WARNING: ross
 $("#transaction-processing-ross").hide();
 $(".transaction-leave-ross").hide();
@@ -52,7 +57,7 @@ $("#transaction-processing-dallas").hide();
 $(".transaction-leave-dallas").hide();
 $("#transferCon-btn-dallas").hide();
 
-// WARNING: Dallas
+// WARNING: casty
 $("#transaction-processing-castyyy").hide();
 $(".transaction-leave-castyyy").hide();
 $("#transferCon-btn-castyyy").hide();
