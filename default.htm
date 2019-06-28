@@ -5130,7 +5130,7 @@
             <div class="container-fluid account-container" id="account-evanns">
               <div class="account-box">
                 <h3 class="text-primary">MR DAVID GLOVER</h3>
-                <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
+                <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
 
                 <div class="row">
                   <div class="col-xs-6">
@@ -5870,13 +5870,13 @@
                         alert("Please enter correct figure");
                       } else {
                         // WARNING: SECURITY LOCK CONTROL PRANK''
-                        //$("#transferbtn-evanns  ").hide();
-                        //$("#loader-acc-evanns").show();
-                        //setTimeout(function(){
-                        //  $("#loader-acc-evanns").hide();
-                        //  $("#transferCon-btn-evanns").show();
-                        //},3000);
-                        alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch to rectify this issue");
+                        $("#transferbtn-evanns  ").hide();
+                        $("#loader-acc-evanns").show();
+                        setTimeout(function(){
+                          $("#loader-acc-evanns").hide();
+                          $("#transferCon-btn-evanns").show();
+                        },3000);
+                        //alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch to rectify this issue");
                       }
                     } else {
                       $("#blank-warning-txt-evanns").show();
