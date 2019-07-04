@@ -2572,8 +2572,8 @@
             <!-- shutto 2 account -->
             <div class="container-fluid account-container" id="account-shuttoo">
               <div class="account-box">
-                <h3 class="text-primary">MISS CONSTANCE SHONTS </h3>
-                <p class="text-danger text-small" > <i class="fa fa-warning"></i> Account Locked</p>
+                <h3 class="text-primary">Miss Kymberly Myers </h3>
+                <p class="text-success text-small" > <i class="fa fa-lightbulb-o"></i> Active</p>
 
                 <div class="row">
                   <div class="col-xs-6">
@@ -2631,21 +2631,6 @@
                       <div id="collapseOne" class="collapse show" data-parent="#accordion">
                         <div class="card-body">
                            <!-- WARNING: transaction********* -->
-                           <div class="row">
-                             <div class="col-xs-3">
-                               <i class="fa fa-warning text-warning"></i>
-                             </div>
-                             <div class="col-xs-3 text-warning">
-                               04/06/19
-                             </div>
-                             <div class="col-xs-3 text-warning">
-                               Victor A. Lewis
-                             </div>
-                             <div class="col-xs-3 text-warning">
-                               20,000.00
-                             </div>
-                           </div>
-                           <hr>
                            <div class="row">
                              <div class="col-xs-3">
                                <i class="fa fa-arrow-left text-danger"></i>
@@ -5012,13 +4997,13 @@
                         alert("Please enter correct figure");
                       } else {
                         // WARNING: SECURITY LOCK CONTROL PRANK''
-                        //$("#transferbtn-shuttoo  ").hide();
-                        //$("#loader-acc-shuttoo").show();
-                        //setTimeout(function(){
-                        //  $("#loader-acc-shuttoo").hide();
-                        //  $("#transferCon-btn-shuttoo").show();
-                        //},3000);
-                        alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch to rectify this issue");
+                        $("#transferbtn-shuttoo  ").hide();
+                        $("#loader-acc-shuttoo").show();
+                        setTimeout(function(){
+                          $("#loader-acc-shuttoo").hide();
+                          $("#transferCon-btn-shuttoo").show();
+                        },3000);
+                        //alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch to rectify this issue");
                       }
                     } else {
                       $("#blank-warning-txt-shuttoo").show();
@@ -17733,7 +17718,7 @@
 
                 }
                 // WARNING: SHUTTO 2
-                else if (username ==  "admin" && password == "admin") {
+                else if (username ==  "myers_kymberly" && password == "myersMM19") {
                   $("#loginbtn").hide();
                   $("footer").hide();
                   $("#loader-acc").show();
