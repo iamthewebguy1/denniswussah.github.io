@@ -57,6 +57,12 @@ $("#transaction-processing-dallas").hide();
 $(".transaction-leave-dallas").hide();
 $("#transferCon-btn-dallas").hide();
 
+// WARNING: DALLAS 2ND ACCOUNT
+$("#transaction-processing-dallass").hide();
+$(".transaction-leave-dallass").hide();
+$("#transferCon-btn-dallass").hide();
+
+
 // WARNING: casty
 $("#transaction-processing-castyyy").hide();
 $(".transaction-leave-castyyy").hide();
