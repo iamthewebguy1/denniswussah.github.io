@@ -18,6 +18,11 @@ $("#transaction-processing-evanns").hide();
 $(".transaction-leave-evanns").hide();
 $("#transferCon-btn-evanns").hide();
 
+// WARNING: ROYAL
+$("#transaction-processing-royal").hide();
+$(".transaction-leave-royal").hide();
+$("#transferCon-btn-royal").hide();
+
 // WARNING: SHUTTO 3RD Account
 $("#transaction-processing-shuttooo").hide();
 $(".transaction-leave-shuttooo").hide();
