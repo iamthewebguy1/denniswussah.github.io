@@ -24,14 +24,14 @@
                 <input class="username-input"  id="username-input" name="name" type="text"  autocomplete="off" autofocus>
                 <span class="error-message" id="error-username">Forgot your username?</span>
                 <br>
-                <button type="submit" name="usernamebtn" class="btn-pref usernamebtn">Next <i class="fa fa-spinner fa-spin"></i> </button>
+                <button type="submit" name="usernamebtn" class="btn-pref usernamebtn" onclick="validateUsername()">Next <i class="fa fa-spinner fa-spin"></i> </button>
               </span>
               <span class="input-holder for-password">
                 <label for="">Password</label>
                 <input class="passcode-input" type="password" name="passcode" autofocus>
                 <span class="error-message" id="error-passcode">Forgot your password?</span>
                 <br>
-                <button type="submit" name="usernamebtn" class="btn-pref passcodebtn">Login <i class="fa fa-spinner fa-spin"></i></button>
+                <button type="submit" name="usernamebtn" class="btn-pref passcodebtn" onclick="validatePasscode()">Login <i class="fa fa-spinner fa-spin"></i></button>
               </span>
               <span class="acknowledge-box">
                 By logging in, I acknowledge that i have read and that I agree with the <span>Terms and Conditions</span> posted on the website.
