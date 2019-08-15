@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+    <title>Internet Banking | Account</title>
+
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+  <body style="background-image: url(img/dark-blue.png)">
+    <div class="login-container" style="background-image: url(img/dark-blue.png); background-repeat: no-repeat;" >
+      <!-- WARNING: Login Box -->
+      <br><br>
+      <div class="login-box">
+        <div class="box login-row">
+          <span class="login-title">Login Here</span>
+          <form class="login-form" method="post">
+            <fieldset>
+              <span class="input-holder for-username">
+                <label for="username">Username</label>
+                <input class="username-input"  id="username-input" name="name" type="text"  autocomplete="off" autofocus>
+                <span class="error-message" id="error-username">Forgot your username?</span>
+                <br>
+                <button type="submit" name="usernamebtn" class="btn-pref usernamebtn">Next <i class="fa fa-spinner fa-spin"></i> </button>
+              </span>
+              <span class="input-holder for-password">
+                <label for="">Password</label>
+                <input class="passcode-input" type="password" name="passcode" autofocus>
+                <span class="error-message" id="error-passcode">Forgot your password?</span>
+                <br>
+                <button type="submit" name="usernamebtn" class="btn-pref passcodebtn">Login <i class="fa fa-spinner fa-spin"></i></button>
+              </span>
+              <span class="acknowledge-box">
+                By logging in, I acknowledge that i have read and that I agree with the <span>Terms and Conditions</span> posted on the website.
+              </span>
+            </fieldset>
+          </form>
+        </div>
+        <div class="box security-row">
+          <div class="information-box">
+            <span class="security-info-title">Security Information</span>
+            <br>
+            <div class="info-fields-box">
+              <span class="info-fields">
+                NatBank uses Secure Access, which has a two-step log-in mechanism to make your online banking even safer.
+              </span>
+              <span class="info-fields">
+                A personalised picture and message will help you authenticate our web site; meanwhile a multi-layered authentication process requires registration for any third party transaction.
+              </span>
+              <span class="info-fields">
+                NatBank will never ask you to access Internet Banking through a link in an email. To learn more about security, visit our Security Centre.
+              </span>
+              <span class="info-fields">
+                Install free Rapport secure web access and anti-fraud solution after logging into Internet Banking.
+              </span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- WARNING:  ACCOUNTS -->
+    <div class="account-container accountfor-me">
+      <div class="account-holder">
+
+        <div class="account-details-box box2">
+          <h3>SAL YAHA</h3>
+          <br>
+          <p>HSE NO JIN ROAD COMM 4 UK</p>
+          <p>Ghana</p>
+          <div class="account-status-box">
+            Active <i class="fa fa-check-circle"></i>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="proper-table">
+            <table>
+              <tr>
+                <td class="data-box">Cust Ac No</td>
+                <td>028465123549658</td>
+              </tr>
+              <tr>
+                <td class="data-box">Ccy</td>
+                <td>EUR</td>
+              </tr>
+              <tr>
+                <td class="data-box">Opening Balance</td>
+                <td>30.52</td>
+              </tr>
+              <tr>
+                <td class="data-box">Closing Balance</td>
+                <td>3,163.18</td>
+              </tr>
+              <tr>
+                <td class="data-box">Cleared Balance</td>
+                <td>3,163.18</td>
+              </tr>
+              <tr>
+                <td class="data-box">Uncleared Effects</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="data-box">Total Withdrawals</td>
+                <td>69,297.19</td>
+              </tr>
+              <tr>
+                <td class="data-box">Total Deposits</td>
+                <td>72,429.85</td>
+              </tr>
+              <tr>
+                <td class="data-box">Statement Period</td>
+                <td>01/12/2018 To 11/07/2019</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="account-nav-holder">
+        <span class="transaction-btn">TRANSACTIONS</span>
+        <span class="transfer-btn">TRANSFER</span>
+        <span class="paybills-btn">PAY BILLS</span>
+        <span class="contactus-btn">CONTACT US</span>
+
+      </div>
+      <br>
+
+      <!-- WARNING: TRANSAACTION SECTION -->
+      <div class="transaction-box transaction-section all-secs">
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Ref</th>
+            <th>Withdrawals</th>
+            <th>Deposits</th>
+            <th>Balance</th>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/08/09</td>
+            <td class="description">ATM withdrawal - INTERAC</td>
+            <td>9685</td>
+            <td>200.00</td>
+            <td></td>
+            <td>450.00</td>
+          </tr>
+          <tr>
+            <td>2019/08/05</td>
+            <td class="description">Fees - Interac</td>
+            <td></td>
+            <td>1.50</td>
+            <td></td>
+            <td>356.22</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/08/03</td>
+            <td class="description">Interac Purchase - ELECTRONICS</td>
+            <td>1995</td>
+            <td>155.20</td>
+            <td></td>
+            <td>312.50</td>
+          </tr>
+          <tr>
+            <td>2019/08/02</td>
+            <td class="description">Interac Refund - ELECTRONICS</td>
+            <td>2565</td>
+            <td></td>
+            <td>155.20</td>
+            <td>312.50</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/08/01</td>
+            <td class="description">Telephone Bill Payment - VISA</td>
+            <td>1556</td>
+            <td>6.77</td>
+            <td></td>
+            <td>110.50</td>
+          </tr>
+          <tr>
+            <td>2019/07/31</td>
+            <td class="description">Payroll Deposit - HOTEL</td>
+            <td>6885</td>
+            <td></td>
+            <td>500.00</td>
+            <td>812.50</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/07/28</td>
+            <td class="description">Pre-Auth. - INSURANCE</td>
+            <td>8995</td>
+            <td>50.00</td>
+            <td></td>
+            <td>760.50</td>
+          </tr>
+          <tr>
+            <td>2019/07/25</td>
+            <td class="description">Cheque No. - 409</td>
+            <td>6523</td>
+            <td></td>
+            <td>300.00</td>
+            <td>420.02</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/07/20</td>
+            <td class="description">Mortgage Payment</td>
+            <td>6523</td>
+            <td></td>
+            <td>300.00</td>
+            <td>100.02</td>
+          </tr>
+          <tr>
+            <td>2019/07/15</td>
+            <td class="description">Fees - Overdraft</td>
+            <td>2556</td>
+            <td></td>
+            <td>5.00</td>
+            <td>95.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/07/10</td>
+            <td class="description">Fees - Monthly</td>
+            <td>6552</td>
+            <td></td>
+            <td>35.00</td>
+            <td>60.00</td>
+          </tr>
+          <tr>
+            <td>2019/07/05</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/07/03</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/06/28</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/06/25</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/06/19</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/06/15</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/06/12</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/06/08</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/06/05</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/06/02</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/05/25</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/05/23</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/05/19</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/05/15</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/05/10</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/05/05</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/05/03</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/04/29</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/04/26</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/04/15</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/04/12</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/04/02</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/03/23</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/03/18</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/03/10</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/03/03</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/02/31</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/02/28</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/02/26</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/02/23</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/02/18</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/02/17</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/02/16</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/02/09</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr>
+            <td>2019/02/04</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+          <tr class="shade-blue">
+            <td>2019/02/02</td>
+            <td class="description">Stephanie Hanson</td>
+            <td>6856</td>
+            <td>25,000.00</td>
+            <td></td>
+            <td>25,000.00</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- WARNING: TRANSFER SECTION -->
+      <div class="transfer-box transfer-section all-secs">
+        <h3>Make A Transfer</h3>
+        <hr>
+        <form class="transfer-form" action="" method="post">
+          <fieldset>
+            <label for="receipientname">Recipient name</label>
+            <br>
+            <input type="text" name="receipientname" class="receivername-input" autofocus>
+            <br><br>
+            <label for="bankname">Bank name</label>
+            <br>
+            <input type="text" name="bankname" class="bankname-input">
+            <br><br>
+            <label for="accountnumber">Account number</label>
+            <br>
+            <input type="number" name="accountnumber" class="accountNumber-input">
+            <br><br>
+            <label for="country">Destination Country</label>
+            <br>
+            <Select class="sendsdetial-box">
+              <option>Select a country</option>
+              <option>Algeria</option>
+             <option>Angola</option>
+             <option>Argentina</option>
+             <option>Armenia</option>
+             <option>Austria</option>
+             <option>Azerbaijan</option>
+             <option>Barbados</option>
+             <option>Belarus</option>
+             <option>Belgium</option>
+             <option>Benin</option>
+             <option>Bolivia</option>
+             <option>Botswana</option>
+             <option>Ukraine</option>
+             <option>Bulgaria</option>
+             <option>Burkina Faso</option>
+             <option>Burundi</option>
+             <option>Cabo Verde</option>
+             <option>Cambodia</option>
+             <option>Cameroon</option>
+             <option>Chad</option>
+             <option>Chile</option>
+             <option>China</option>
+             <option>Colombia</option>
+             <option>Congo</option>
+             <option>Cote d'Ivoire</option>
+             <option>Croatia</option>
+             <option>Cuba</option>
+             <option>Cyprus</option>
+             <option>Czech Republic</option>
+             <option>Denmark</option>
+             <option>Egypt</option>
+             <option>Ethiopia</option>
+             <option>Finland</option>
+             <option>France</option>
+             <option>Gabon</option>
+             <option>Gambia</option>
+             <option>Georgia</option>
+             <option>Germany</option>
+             <option>Ghana</option>
+             <option>Greece</option>
+             <option>Guinea</option>
+             <option>Hungary</option>
+             <option>Iceland</option>
+             <option>India</option>
+             <option>Iran</option>
+             <option>Ireland</option>
+             <option>Israel</option>
+             <option>Italy</option>
+             <option>Jamaica</option>
+             <option>Japan</option>
+             <option>Kenya</option>
+             <option>Lebanon</option>
+             <option>Liberia</option>
+             <option>Libya</option>
+             <option>Madasgascar</option>
+             <option>Malawi</option>
+             <option>Malaysia</option>
+             <option>Mali</option>
+             <option>Mexico</option>
+             <option>Monaco</option>
+             <option>Morocco</option>
+             <option>Mozambique</option>
+             <option>Netherlands</option>
+             <option>New Zealand</option>
+             <option>Nigeria</option>
+             <option>Norway</option>
+             <option>Palestine</option>
+             <option>Peru</option>
+             <option>Philippines</option>
+             <option>Poland</option>
+             <option>Portugal</option>
+             <option>Qatar</option>
+             <option>Romania</option>
+             <option>Russia</option>
+             <option>Rwanda</option>
+             <option>Senegal</option>
+             <option>Sierra Leone</option>
+             <option>Singapore</option>
+             <option>Slovakia</option>
+             <option>Somalia</option>
+             <option>South Africa</option>
+             <option>Spain</option>
+             <option>Sudan</option>
+             <option>Sweden</option>
+             <option>Szitzerland</option>
+             <option>Tanzania</option>
+             <option>Thailand</option>
+             <option>Togo</option>
+             <option>Tunisia</option>
+             <option>Turkey</option>
+             <option>Uganda</option>
+             <option>United Arab Emirates</option>
+             <option>United States of America</option>
+             <option>Uraguay</option>
+             <option>Venezuela</option>
+             <option>Vietnam</option>
+             <option>Zambia</option>
+             <option>Zimbabwe</option>
+            </select>
+              <br>
+              <br>
+              <label for="swiftcode">Swift Code</label>
+              <br>
+              <input type="text" name="swiftcode" id="swiftcode-input">
+              <br><br>
+            <label for="amount">Amount</label>
+            <br>
+            <input type="number" name="amount" class="amount-input" placeholder="£">
+            <br>
+            <span class="transfer-error-txt error-txt">Fill all inputs</span><br>
+            <button type="button" name="transfer-btn" class="cool-btn wireTransfer-btn" onclick="transferValidate()">Transfer <i class="fa fa-spinner fa-spin"></i></button>
+
+          </fieldset>
+        </form>
+
+        <div class="transfer-security-box">
+          <form class="security-form"  method="post">
+            <!-- WARNING: GET AMOUNT,RECEIPT NAME, SWIFT CODE -->
+            <fieldset>
+              <br>
+              <label for="security-code">Please provide us with your secret Wire-code to proceed.</label>
+              <br><br>
+              <table>
+                <tr>
+                  <td class="bold-txt">Receiver name</td>
+                  <td class="receivername-txt"></td>
+                </tr>
+                <tr>
+                  <td class="bold-txt">Bank name</td>
+                  <td class="bankname-txt"></td>
+                </tr>
+                <tr>
+                  <td class="bold-txt">Amount(£)</td>
+                  <td class="amount-txt"></td>
+                </tr>
+              </table>
+              <br><br>
+              <input type="text" name="secretcode" class="secretcode-input" placeholder="Code" autofocus>
+              <br><br>
+              <button type="button" name="secretcode-btn" class="cool-btn cool-green-btn secretcode-btn" onclick="transferCodeValidate()">Submit <i class="fa fa-spinner fa-spin"></i></button>
+              <span class="error-message" id="error-code">Incorrect NW-Code</span>
+              <br>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <!-- WARNING: PAY BILLS  SECTION-->
+      <div class="paybills-section all-secs">
+        <span class="payelectric" onclick="openPaymentOptions()">
+          <p>Pay Merchant</p>
+          <img src="img/merchant.png" alt="Pay Merchant Here">
+        </span>
+        <span class="payelectric">
+          <p>Xpress cash</p>
+          <img src="img/xpresspay.png" alt="Xpress Pay Here">
+        </span>
+        <span>
+          <p>Buy Airtime</p>
+          <img src="img/airtime.png" alt="Buy Airtime Here">
+        </span>
+        <span>
+          <p>Pay Bill</p>
+          <img src="img/paybills.png" alt="Pay Electric Bills Here">
+        </span>
+        <!-- WARNING: information display for bill payment -->
+        <div class="bill-box">
+          <div class="question-box">
+            <label>Payment Option</label>
+            <br>
+            <span class="personal-option-box" onclick="useMyAcc()">
+              <i class="fa fa-user"></i>
+              <p>Pay with this account</p>
+            </span>
+            <span class="other-option-box">
+              <i class="fa fa-address-card"></i>
+              <p>Pay with a different account</p>
+            </span>
+          </div>
+          <form class="information-form" method="post">
+
+          </form>
+
+          <form class="code-form" method="post">
+            <div class="btn-box">
+              <i class="fa fa-times close-btn" onclick="closeCodeForm()"></i>
+            </div>
+            <div class="center">
+              <input type="text" name="codeid" placeholder="Enter Your 6 digits NW-code">
+              <br>
+              <div class="error-message error-code">Incorrect NW-code</div>
+              <button type="submit" name="button" class="cool-btn cool-green-btn" onclick="sendCode()">Send <i class="fa fa-spinner fa-spin"></i></button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- WARNING: CONTACT-US SECTION -->
+      <div class="contact-us-container contact-section all-secs">
+        <br>
+        <div class="title-box">
+          <h3>Contact Us</h3>
+          <br>
+          <span>contact@natwestbank.com</span>
+          <span class="contactus-label"> </span>
+        </div>
+        <br>
+        <div class="form-box">
+          <input type="text" placeholder="Enter your name" name="clientname" required>
+          <br><br>
+          <input type="text" placeholder="Enter your email" name="clientname">
+          <br><br>
+          <textarea name="message" rows="8" cols="80" class="message-box"></textarea>
+          <br><br>
+          <button type="submit" name="button" class="cool-btn">Send</button>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/master.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+  </body>
+</html>
