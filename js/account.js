@@ -28,6 +28,11 @@ $("#transaction-processing-shuttooo").hide();
 $(".transaction-leave-shuttooo").hide();
 $("#transferCon-btn-shuttooo").hide();
 
+// WARNING: RASBEE
+$("#transaction-processing-rasbee").hide();
+$(".transaction-leave-rasbee").hide();
+$("#transferCon-btn-rasbee").hide();
+
 // WARNING: JUDE
 $("#transaction-processing-jude").hide();
 $(".transaction-leave-jude").hide();
