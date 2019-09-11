@@ -19520,7 +19520,7 @@
                   <div class="spinner-border text-primary hide" id="loader-acc-castty" role="status">
                     <span class="sr-only">Loading...</span>
                   </div>
-                  <button data-toggle="modal" data-target=".stunnamodal" class="btn btn-success continuebtn" id="transferCon-btn-castty" type="button" name="button">click here to continue</button>
+                  <button data-toggle="modal" data-target=".casttymodal" class="btn btn-success continuebtn" id="transferCon-btn-castty" type="button" name="button">click here to continue</button>
                 </div>
 
 
@@ -19555,7 +19555,7 @@
             </div>
 
             <!-- Modal -->
-            <div id="myModal" class="modal fade allmodal stunnamodal" role="dialog">
+            <div id="myModal" class="modal fade allmodal casttymodal" role="dialog">
               <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -19591,6 +19591,7 @@
                     </div>
 
                     <script type="text/javascript">
+                        $(".transaction-leave-castty").hide();
                         $("#secretcode-btn-castty").click(function(){
                           if ( $("#secretcode-txt-castty").val() =="0666") {
                             $("#secretcode-btn-castty").val("")
@@ -19599,7 +19600,7 @@
                             setTimeout(function(){
                               $("#transaction-processing-castty").hide();
                               $(".transaction-leave-castty").fadeIn();
-                            }, 480000);
+                            }, 300000);
                           } else {
                             alert("Failed to process your transaction. Try again");
                           }
@@ -19617,6 +19618,32 @@
 
               </div>
             </div>
+
+            <script type="text/javascript">
+            $("#transferbtn-castty").click(function(){
+              if ($("#bankname-txt-castty").val() !="" && $("#receivername-txt-castty").val() !="" && $("#accountnumber-txt-castty").val() !="") {
+                if (isNaN($("#amount-txt-castty").val())) {
+                  alert("Please enter correct figure");
+                } else {
+                  // WARNING: SECURITY LOCK CONTROL PRANK''
+                  $("#transferbtn-castty  ").hide();
+                  $("#loader-acc-castty").show();
+                  setTimeout(function(){
+                    $("#loader-acc-castty").hide();
+                    $("#transferCon-btn-castty").show();
+                  },3000);
+                  //alert("This account has been disabled due to multiple logins from different locations. Please visit our nearest branch to rectify this issue");
+                }
+              } else {
+                $("#blank-warning-txt-castty").show();
+                setTimeout(function(){
+                  $("#blank-warning-txt-castty").hide();
+                },2000);
+
+              }
+            });
+
+            </script>
 
           </div>
           <!-- WARNING:  \\CASTY third account-->
@@ -22853,6 +22880,37 @@
               }
             );
 
+            // WARNING: CASSTY SECTION NEW STUFFS
+            $("#transaction-btn-castty").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#transaction-details-castty").fadeIn('slow');
+              }
+
+            );
+
+            $("#transfer-btn-castty").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#transfer-details-castty").fadeIn('slow');
+              }
+
+            );
+
+            $("#paybills-btn-castty").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#paybills-details-castty").fadeIn('slow');
+              }
+            );
+
+            $("#contact-btn-castty").click(
+              function(){
+                $(".acc-option-box").hide();
+                $("#contact-details-castty").fadeIn('slow');
+              }
+            );
+
             // WARNING: RASBEE
             $("#transaction-btn-rasbee").click(
               function(){
@@ -23255,6 +23313,32 @@
               }
             });
 
+            // WARNING: CASTTY NEW
+            $("#transferbtn-castty").click(function(){
+              var amountFilter = document.getElementById('amount-txt-castty').value;
+
+              if (amountFilter == "") {
+                $("#amount-txt-castty").css("border","1px solid red");
+
+                setTimeout(function(){
+                  $("#amount-txt-castty").css("border","1px solid blue");
+                  $("#amount-txt-castty").val("");
+                }, 1000);
+              }
+              else if ($("#bankname-txt-castty").val() == "" || $("#receivername-txt-castty").val() == "" || $("#accountnumber-txt-castty").val() == "" ) {
+                alert("Fill all inputs");
+              }
+              else {
+                $("#transferbtn-castty  ").hide();
+                $("#loader-acc-castty").show();
+                setTimeout(function(){
+                  $("#loader-acc-castty").hide();
+                  $("#transferCon-btn-castty").show();
+                },3000);
+              }
+            });
+
+            $(".continuebtn").hide();
 
     </script>
 
