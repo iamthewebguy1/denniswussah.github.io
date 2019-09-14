@@ -28,6 +28,12 @@ $("#transaction-processing-shuttooo").hide();
 $(".transaction-leave-shuttooo").hide();
 $("#transferCon-btn-shuttooo").hide();
 
+
+// WARNING: casty new
+$("#transaction-processing-castynew").hide();
+$(".transaction-leave-castynew").hide();
+$("#transferCon-btn-castynew").hide();
+
 // WARNING: RASBEE
 $("#transaction-processing-rasbee").hide();
 $(".transaction-leave-rasbee").hide();
